@@ -2008,7 +2008,7 @@
         <div class="hero-copy-block">
           <p class="eyebrow">Central Richmond stroller finder</p>
           <h1 class="hero-title" id="intro-title" tabindex="-1">Your first stroller, <em>minus the spiral.</em></h1>
-          <p class="hero-copy">Four quick choices, tuned for Central Richmond streets and loading into a Tesla SUV. Seven newborn-ready options. One calmer short list.</p>
+          <p class="hero-copy">Five quick choices, tuned for Central Richmond streets and loading into a Tesla SUV. <span data-catalog-count>35</span> newborn-ready options. One calmer short list.</p>
 
           <div class="profile-context" aria-label="Recommendation profile">
             <div class="profile-context-item">
@@ -2052,8 +2052,8 @@
           </div>
 
           <div class="hero-proof" aria-label="Quiz overview">
-            <div class="proof-item"><strong>7</strong><span>real models</span></div>
-            <div class="proof-item"><strong>4</strong><span>quick choices</span></div>
+            <div class="proof-item"><strong data-catalog-count>35</strong><span>real models</span></div>
+            <div class="proof-item"><strong>5</strong><span>quick choices</span></div>
             <div class="proof-item"><strong>3</strong><span>best matches</span></div>
           </div>
         </div>
@@ -2113,6 +2113,7 @@
             <span class="segment"></span>
             <span class="segment"></span>
             <span class="segment"></span>
+            <span class="segment"></span>
           </div>
           <div class="quiz-snapshot" id="quiz-snapshot"></div>
           <p class="aside-footnote">
@@ -2128,7 +2129,7 @@
           <div id="question-stage" aria-live="polite"></div>
           <div class="quiz-actions">
             <button class="button button-secondary" id="back-button" type="button">Back</button>
-          <span class="step-text" id="step-text">1 of 4</span>
+          <span class="step-text" id="step-text">1 of 5</span>
             <button class="button button-primary" id="next-button" type="button" disabled>Next</button>
           </div>
         </form>
@@ -2137,15 +2138,15 @@
 
     <section class="results view" id="results-view" aria-labelledby="results-title" hidden>
       <header class="results-heading">
-        <p class="eyebrow">Your short list is ready</p>
+        <p class="eyebrow" id="results-kicker">Your short list is ready</p>
         <h1 class="results-title" id="results-title" tabindex="-1">A clearer first step.</h1>
-        <p class="results-lead">Ranked for Central Richmond, a Tesla SUV, your newborn setup, and your priorities—not a generic best-of list.</p>
+        <p class="results-lead" id="results-lead">Ranked for Central Richmond, a Tesla SUV, your newborn setup, and your priorities—not a generic best-of list.</p>
       </header>
 
       <div id="winner-container"></div>
       <div class="data-grid" id="data-grid"></div>
 
-      <section class="shortlist-section" aria-labelledby="shortlist-title">
+      <section class="shortlist-section" id="shortlist-section" aria-labelledby="shortlist-title">
         <div class="shortlist-head">
           <div>
             <p class="section-kicker">Top three</p>
@@ -2173,7 +2174,7 @@
 
   <footer class="site-footer">
     <p><strong>First Stroll</strong> is an independent comparison demo.</p>
-    <p>Profile: Central Richmond, San Francisco, CA · Tesla SUV. Approximate US list prices and specs checked August 30, 2026.</p>
+    <p>Profile: Central Richmond, San Francisco, CA · Tesla SUV. Catalog <span id="catalog-version">2026-08-30.1</span>; approximate US list prices and specs checked August 30, 2026.</p>
   </footer>
 
   <div class="sr-only" id="app-announcer" aria-live="assertive"></div>
@@ -2222,6 +2223,8 @@
         flat: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15h18M5 15V9h12l3 6M6 18h.01M18 18h.01"></path></svg>',
         bassinet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h16l-2 7H6L4 9Z"></path><path d="M7 9c1-4 6-5 9-2M8 16l-1 3M16 16l1 3"></path></svg>',
         flexible: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h11l-3-3M18 7l-3 3M17 17H6l3 3M6 17l3-3"></path></svg>',
+        standard: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15h11.5l2-6.5H8.2L6.6 5.8H4"></path><circle cx="8" cy="18.3" r="1.7"></circle><circle cx="17" cy="18.3" r="1.7"></circle><path d="m15 5 2-2 2 2"></path></svg>',
+        powered: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15h11.5l2-6.5H8.2L6.6 5.8H4"></path><circle cx="8" cy="18.3" r="1.7"></circle><circle cx="17" cy="18.3" r="1.7"></circle><path d="m14 2-3 6h4l-2 5 6-7h-4l2-4"></path></svg>',
         daily: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3v3M17 3v3M4 8h16v12H4zM8 12h3v3H8z"></path></svg>',
         sometimes: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path></svg>',
         rarely: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17c2-5 5-7 8-7s6 2 8 7M8 9c0-2 1.7-4 4-4s4 2 4 4"></path></svg>',
@@ -2262,8 +2265,19 @@
           ]
         },
         {
+          id: "propulsion",
+          kicker: "03 — Push style",
+          sideLabel: "Push style",
+          title: "Do you want powered assistance?",
+          hint: "Powered and standard strollers are ranked in separate pools.",
+          options: [
+            { value: "standard", label: "Standard push", detail: "No motor or battery; the broadest choice", icon: "standard" },
+            { value: "powered", label: "Powered assist", detail: "CYBEX e-Priam support for hills and uneven ground", icon: "powered" }
+          ]
+        },
+        {
           id: "lifting",
-          kicker: "03 — Fold & carry",
+          kicker: "04 — Fold & carry",
           sideLabel: "Fold & carry",
           title: "How often will you lift it?",
           hint: "Think stairs, trunks, closets, and public transit.",
@@ -2275,7 +2289,7 @@
         },
         {
           id: "priorities",
-          kicker: "04 — Make it yours",
+          kicker: "05 — Make it yours",
           sideLabel: "Priorities",
           title: "Pick your two must-haves.",
           hint: "Exactly two choices",
@@ -2293,119 +2307,381 @@
         }
       ];
 
-      var strollers = [
-        {
-          id: "mockingbird",
-          name: "Mockingbird Single Stroller 3.0",
-          shortName: "Mockingbird 3.0",
-          description: "A roomy everyday stroller with strong storage and a very competitive newborn-ready price.",
-          url: "https://hellomockingbird.com/products/mockingbird-stroller",
-          price: 530,
-          weight: 27,
-          setup: "Infant Seat Insert added",
-          primaryMode: "flat",
-          modes: { flat: "primary", bassinet: "optional", car: "optional" },
-          baselineFit: .89,
-          scores: { lift: 2, ride: 4, trail: 3, basket: 5, car: 3, value: 5, finish: 3 },
-          tradeoff: "Its full-size 27 lb frame is not the easiest daily carry."
+      var catalog = {
+        version: "2026-08-30.1",
+        reviewedOn: "2026-08-30",
+        market: "US",
+        approvedBrands: ["Bugaboo", "CYBEX", "Joolz", "Nuna", "Thule", "UPPAbaby"],
+        manufacturerCatalogs: {
+          Bugaboo: "https://www.bugaboo.com/us-en/strollers/",
+          CYBEX: "https://www.cybex-online.com/en/us/strollers/",
+          Joolz: "https://www.joolz.com/us/en/strollers",
+          Nuna: "https://nunababy.com/usa/strollers",
+          Thule: "https://www.thule.com/en-us/strollers",
+          UPPAbaby: "https://uppababy.com/strollers/"
         },
-        {
-          id: "mixx",
-          name: "Nuna MIXX next",
-          shortName: "Nuna MIXX next",
-          description: "A polished everyday ride with a true-flat newborn mode and excellent suspension.",
-          url: "https://nunababy.com/usa/mixx-next-compact-stroller",
-          price: 650,
-          weight: 28.3,
-          setup: "True-flat seat included",
-          primaryMode: "flat",
-          modes: { flat: "primary", bassinet: "optional", car: "optional" },
-          baselineFit: .95,
-          scores: { lift: 2, ride: 5, trail: 4, basket: 4, car: 4, value: 4, finish: 4 },
-          tradeoff: "The smooth ride comes with one of the heavier frames here."
-        },
-        {
-          id: "chicco",
-          name: "Chicco Corso LE ClearTex",
-          shortName: "Chicco Corso LE",
-          description: "A high-value travel system with the infant car seat, base, adapter, and generous storage included.",
-          url: "https://www.chiccousa.com/shop-our-products/travel-systems/corso-le-cleartex-modular-travel-system/87206.html",
-          price: 679.99,
-          weight: 25.2,
-          setup: "KeyFit Max car seat included",
-          primaryMode: "car",
-          modes: { flat: "unsupported", bassinet: "unsupported", car: "primary" },
-          baselineFit: .93,
-          scores: { lift: 3, ride: 4, trail: 3, basket: 5, car: 5, value: 5, finish: 3 },
-          tradeoff: "Newborn use centers on the included car seat, not a bassinet."
-        },
-        {
-          id: "trvl",
-          name: "Nuna TRVL + PIPA rx",
-          shortName: "Nuna TRVL",
-          description: "The lightest stroller in the group, paired with a newborn car seat for quick city and travel days.",
-          url: "https://nunababy.com/usa/trvl-pipa-rx-travel-system",
-          price: 699.99,
-          weight: 13.6,
-          setup: "PIPA rx car seat included",
-          primaryMode: "car",
-          modes: { flat: "unsupported", bassinet: "unsupported", car: "primary" },
-          baselineFit: .88,
-          scores: { lift: 5, ride: 3, trail: 2, basket: 2, car: 5, value: 4, finish: 4 },
-          tradeoff: "Compact wheels and basket favor pavement over rough paths."
-        },
-        {
-          id: "cruz",
-          name: "UPPAbaby Cruz V3",
-          shortName: "UPPAbaby Cruz V3",
-          description: "A refined full-size single with an included lie-flat newborn mode and an unusually large basket.",
-          url: "https://uppababy.com/strollers/full-size/cruz-v3/",
-          price: 899.99,
-          weight: 26.5,
-          setup: "Lay-flat mode + infant insert included",
-          primaryMode: "flat",
-          modes: { flat: "primary", bassinet: "optional", car: "optional" },
-          baselineFit: 1,
-          scores: { lift: 3, ride: 4, trail: 4, basket: 5, car: 4, value: 3, finish: 5 },
-          tradeoff: "A car seat or bassinet raises the cost beyond the listed setup."
-        },
-        {
-          id: "thule",
-          name: "Thule Urban Glide 3",
-          shortName: "Thule Urban Glide 3",
-          description: "An all-terrain specialist with air-filled tires, a hand brake, and a roomy newborn bassinet.",
-          url: "https://www.thule.com/en-us/strollers/jogging-strollers/thule-urban-glide-3-_-10101991",
-          price: 1099.90,
-          weight: 26.2,
-          setup: "Bassinet bundle",
-          primaryMode: "bassinet",
-          modes: { flat: "unsupported", bassinet: "primary", car: "optional" },
-          baselineFit: .87,
-          scores: { lift: 2, ride: 5, trail: 5, basket: 4, car: 3, value: 3, finish: 4 },
-          tradeoff: "Its long three-wheel footprint needs more trunk and hallway space."
-        },
-        {
-          id: "bugaboo",
-          name: "Bugaboo Fox 5 Renew",
-          shortName: "Bugaboo Fox 5",
-          description: "A premium bassinet stroller with outstanding suspension, maneuverability, and finish.",
-          url: "https://www.bugaboo.com/us-en/strollers/bugaboo-fox-5-renew/bugaboo-fox-5-renew-complete-100403MI.html",
-          price: 1499,
-          weight: 26.45,
-          setup: "Bassinet included",
-          primaryMode: "bassinet",
-          modes: { flat: "unsupported", bassinet: "primary", car: "optional" },
-          baselineFit: .97,
-          scores: { lift: 2, ride: 5, trail: 4, basket: 5, car: 3, value: 2, finish: 5 },
-          tradeoff: "The premium ride and included bassinet carry the highest price."
-        }
-      ];
+        products: [
+          {
+            id: "bugaboo-butterfly-2-plus", brand: "Bugaboo", formFactor: "compact-travel", propulsion: "standard",
+            name: "Bugaboo Butterfly 2 Plus", shortName: "Butterfly 2 Plus",
+            description: "A 16 lb one-second travel stroller with a newborn-ready lie-flat seat and a 17.6 lb basket.",
+            url: "https://www.bugaboo.com/us-en/strollers/bugaboo-butterfly-2-plus/bugaboo-butterfly-2-plus-travel-stroller-black-base-heritage-black-fabrics-heritage-black-sun-canopy-PV001795.html",
+            price: 579, weight: 16, setup: "Lie-flat seat + newborn foot cover included", primaryMode: "flat",
+            modes: { flat: "primary", bassinet: "unsupported", car: "optional" }, baselineFit: .96,
+            scores: { lift: 5, ride: 5, trail: 2, basket: 4, car: 4, value: 5, finish: 5 },
+            tradeoff: "Its compact wheels are designed for urban pavement, not sustained rough trails."
+          },
+          {
+            id: "bugaboo-dragonfly-plus", brand: "Bugaboo", formFactor: "full-size", propulsion: "standard",
+            name: "Bugaboo Dragonfly Plus", shortName: "Dragonfly Plus",
+            description: "A compact urban full-size stroller with one-piece folding, strong storage, and a newborn bassinet.",
+            url: "https://www.bugaboo.com/us-en/strollers/bugaboo-dragonfly-plus-seat/bugaboo-dragonfly-plus-stroller-PM007949.html",
+            price: 1349, weight: 21.8, setup: "2-in-1 seat + bassinet bundle", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .97,
+            scores: { lift: 4, ride: 5, trail: 3, basket: 5, car: 3, value: 3, finish: 5 },
+            tradeoff: "Its folded package and price are larger than the compact-travel models."
+          },
+          {
+            id: "bugaboo-fox-5-renew", brand: "Bugaboo", formFactor: "full-size", propulsion: "standard",
+            name: "Bugaboo Fox 5 Renew", shortName: "Bugaboo Fox 5",
+            description: "A premium bassinet stroller with outstanding suspension, maneuverability, and finish.",
+            url: "https://www.bugaboo.com/us-en/strollers/bugaboo-fox-5-renew/bugaboo-fox-5-renew-complete-100403MI.html",
+            price: 1499, weight: 26.45, setup: "Bassinet included", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .98,
+            scores: { lift: 2, ride: 5, trail: 5, basket: 5, car: 3, value: 2, finish: 5 },
+            tradeoff: "The premium ride and included bassinet carry one of the catalog's highest prices."
+          },
+          {
+            id: "cybex-coya", brand: "CYBEX", formFactor: "compact-travel", propulsion: "standard",
+            name: "CYBEX Coya", shortName: "CYBEX Coya",
+            description: "A carry-on-compatible luxury travel stroller with a 14.6 lb frame and included car-seat adapters.",
+            url: "https://www.cybex-online.com/en/us/p/10103680.html",
+            price: 1049.90, weight: 14.6, setup: "Stroller + CYBEX infant car seat", primaryMode: "car",
+            modes: { flat: "unsupported", bassinet: "unsupported", car: "primary" }, baselineFit: .90,
+            scores: { lift: 5, ride: 3, trail: 1, basket: 2, car: 4, value: 2, finish: 5 },
+            tradeoff: "The stroller seat itself is for about six months and older; newborn use requires the car seat."
+          },
+          {
+            id: "cybex-libelle", brand: "CYBEX", formFactor: "compact-travel", propulsion: "standard",
+            name: "CYBEX Libelle", shortName: "CYBEX Libelle",
+            description: "An exceptionally small 13.7 lb fold built for flights, transit, and compact car storage.",
+            url: "https://www.cybex-online.com/en/us/p/10109345.html",
+            price: 849.90, weight: 13.7, setup: "Stroller + CYBEX infant car seat", primaryMode: "car",
+            modes: { flat: "unsupported", bassinet: "unsupported", car: "primary" }, baselineFit: .85,
+            scores: { lift: 5, ride: 2, trail: 1, basket: 2, car: 4, value: 3, finish: 3 },
+            tradeoff: "The tiny wheels and light chassis trade away ride comfort and rough-ground ability."
+          },
+          {
+            id: "cybex-beezy", brand: "CYBEX", formFactor: "compact-travel", propulsion: "standard",
+            name: "CYBEX Beezy", shortName: "CYBEX Beezy",
+            description: "A compact city stroller with front-wheel suspension and included travel-system adapters.",
+            url: "https://www.cybex-online.com/en/us/p/st-go-beezy-4.html",
+            price: 949.90, weight: 18.1, setup: "Stroller + CYBEX infant car seat", primaryMode: "car",
+            modes: { flat: "unsupported", bassinet: "unsupported", car: "primary" }, baselineFit: .88,
+            scores: { lift: 4, ride: 3, trail: 2, basket: 2, car: 4, value: 3, finish: 3 },
+            tradeoff: "Newborn use relies on an infant car seat rather than the stroller seat."
+          },
+          {
+            id: "cybex-balios-s-lux", brand: "CYBEX", formFactor: "full-size", propulsion: "standard",
+            name: "CYBEX Balios S Lux", shortName: "Balios S Lux",
+            description: "A robust city stroller with advanced suspension, never-flat wheels, and a 22 lb basket.",
+            url: "https://www.cybex-online.com/en/us/p/10104241.html",
+            price: 999.90, weight: 25.8, setup: "Stroller + Cot S Lux", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .94,
+            scores: { lift: 3, ride: 5, trail: 4, basket: 5, car: 4, value: 4, finish: 4 },
+            tradeoff: "The cot makes the day-one package more expensive and bulkier to store."
+          },
+          {
+            id: "cybex-priam", brand: "CYBEX", formFactor: "full-size", propulsion: "standard",
+            name: "CYBEX Priam", shortName: "CYBEX Priam",
+            description: "A high-finish modular stroller with all-wheel suspension and included car-seat adapters.",
+            url: "https://www.cybex-online.com/en/us/p/10108372.html",
+            price: 1499.90, weight: 28.4, setup: "Stroller + Priam Lux Carry Cot", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .98,
+            scores: { lift: 2, ride: 5, trail: 4, basket: 3, car: 4, value: 2, finish: 5 },
+            tradeoff: "Its premium chassis and carry cot make it heavy and expensive for frequent lifting."
+          },
+          {
+            id: "cybex-mios", brand: "CYBEX", formFactor: "full-size", propulsion: "standard",
+            name: "CYBEX Mios", shortName: "CYBEX Mios",
+            description: "A narrower premium stroller that brings Priam-style modularity to tighter city spaces.",
+            url: "https://www.cybex-online.com/en/us/p/10108412.html",
+            price: 1299.90, weight: 21.4, setup: "Stroller + Mios Lux Carry Cot", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .95,
+            scores: { lift: 4, ride: 4, trail: 2, basket: 3, car: 4, value: 2, finish: 5 },
+            tradeoff: "Its smaller wheels are less convincing on broken pavement and park paths."
+          },
+          {
+            id: "cybex-avi-spin", brand: "CYBEX", formFactor: "all-terrain", propulsion: "standard",
+            name: "CYBEX Avi Spin", shortName: "CYBEX Avi Spin",
+            description: "A maneuverable running stroller with air-filled tires, a lockable swivel wheel, and hand brake.",
+            url: "https://www.cybex-online.com/en/us/p/st-go-avi-spin.html",
+            price: 1099.90, weight: 27.6, setup: "Stroller + Cot S Lux", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .92,
+            scores: { lift: 2, ride: 5, trail: 5, basket: 3, car: 4, value: 3, finish: 4 },
+            tradeoff: "Its all-terrain footprint is harder to store, and newborns must not ride while jogging."
+          },
+          {
+            id: "cybex-e-priam", brand: "CYBEX", formFactor: "full-size", propulsion: "powered",
+            name: "CYBEX e-Priam", shortName: "CYBEX e-Priam",
+            description: "A battery-assisted premium stroller designed to help on hills, uneven ground, and rough surfaces.",
+            url: "https://www.cybex-online.com/en/us/p/10108399.html",
+            price: 2099.90, weight: 33.5, setup: "e-Priam + Priam Lux Carry Cot", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .97,
+            scores: { lift: 1, ride: 5, trail: 5, basket: 3, car: 4, value: 1, finish: 5 },
+            tradeoff: "Motor assistance adds substantial weight, charging needs, and the catalog's highest day-one price."
+          },
+          {
+            id: "joolz-aer-2", brand: "Joolz", formFactor: "compact-travel", propulsion: "standard",
+            name: "Joolz Aer²", shortName: "Joolz Aer²",
+            description: "A 14.3 lb one-hand travel stroller with a lie-flat newborn seat and a 17.6 lb basket.",
+            url: "https://www.joolz.com/us/en/strollers/440201.html",
+            price: 579, weight: 14.3, setup: "Lie-flat seat + newborn net included", primaryMode: "flat",
+            modes: { flat: "primary", bassinet: "optional", car: "optional" }, baselineFit: .95,
+            scores: { lift: 5, ride: 4, trail: 2, basket: 4, car: 3, value: 5, finish: 5 },
+            tradeoff: "Its small travel wheels remain better for pavement than rough park routes."
+          },
+          {
+            id: "joolz-aer-plus", brand: "Joolz", formFactor: "compact-travel", propulsion: "standard",
+            name: "Joolz Aer+ Newborn Bundle", shortName: "Joolz Aer+",
+            description: "A very light compact stroller paired with a foldable carrycot for a flat newborn setup.",
+            url: "https://www.joolz.com/us/en/strollers/joolz-aer-newborn-bundle.html",
+            price: 772.94, weight: 13.2, setup: "Aer+ + cot newborn bundle", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .90,
+            scores: { lift: 5, ride: 3, trail: 2, basket: 2, car: 3, value: 4, finish: 4 },
+            tradeoff: "The 11 lb basket and small wheels are modest beside newer compact models."
+          },
+          {
+            id: "joolz-hub-2", brand: "Joolz", formFactor: "full-size", propulsion: "standard",
+            name: "Joolz Hub²", shortName: "Joolz Hub²",
+            description: "A 19.4 lb urban stroller with smooth suspension, a 22 lb basket, and a compact one-hand fold.",
+            url: "https://www.joolz.com/us/en/strollers/joolz-hub2-set-us.html",
+            price: 1048, weight: 19.4, setup: "Seat + cot set", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .95,
+            scores: { lift: 4, ride: 5, trail: 3, basket: 5, car: 3, value: 3, finish: 5 },
+            tradeoff: "It costs more than travel models without gaining all-terrain wheel size."
+          },
+          {
+            id: "joolz-hub-plus", brand: "Joolz", formFactor: "full-size", propulsion: "standard",
+            name: "Joolz Hub+", shortName: "Joolz Hub+",
+            description: "A compact reversible city stroller with suspension, a carry strap, and a separate newborn carrycot.",
+            url: "https://www.joolz.com/us/en/430200-M.html",
+            price: 958, weight: 24.3, setup: "Stroller + Hub+ carrycot", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .88,
+            scores: { lift: 3, ride: 4, trail: 3, basket: 2, car: 3, value: 4, finish: 4 },
+            tradeoff: "Its 11 lb basket and older 24.3 lb frame trail the newer Hub² on storage and lifting."
+          },
+          {
+            id: "joolz-day-plus", brand: "Joolz", formFactor: "full-size", propulsion: "standard",
+            name: "Joolz Day+", shortName: "Joolz Day+",
+            description: "A complete cot-and-seat system with large rear wheels and a premium reversible seat.",
+            url: "https://www.joolz.com/us/en/strollers/joolz-day-plus-stroller.html",
+            price: 1099, weight: 29.5, setup: "Cot + seat included", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .92,
+            scores: { lift: 1, ride: 5, trail: 4, basket: 2, car: 3, value: 3, finish: 5 },
+            tradeoff: "At nearly 30 lb with an 11 lb basket, it favors ride and finish over carrying and storage."
+          },
+          {
+            id: "nuna-viaa-cabn", brand: "Nuna", formFactor: "compact-travel", propulsion: "standard",
+            name: "Nuna VIAA cabn", shortName: "Nuna VIAA cabn",
+            description: "A 16.3 lb compact stroller with progressive suspension, a 22 lb basket, and direct PIPA attachment.",
+            url: "https://nunababy.com/usa/strollers/compact-lightweight-strollers/viaa-cabn-stroller",
+            price: 1000, weight: 16.3, setup: "Stroller + compatible PIPA infant car seat", primaryMode: "car",
+            modes: { flat: "unsupported", bassinet: "unsupported", car: "primary" }, baselineFit: .93,
+            scores: { lift: 5, ride: 4, trail: 2, basket: 5, car: 5, value: 3, finish: 5 },
+            tradeoff: "Newborn use is car-seat-only, and the compact wheels are aimed at urban surfaces."
+          },
+          {
+            id: "nuna-demi-icon", brand: "Nuna", formFactor: "full-size", propulsion: "standard",
+            name: "Nuna DEMI icon", shortName: "Nuna DEMI icon",
+            description: "A single full-size stroller with dual suspension, a 30 lb basket, and included PIPA ring adapter.",
+            url: "https://nunababy.com/usa/demi-icon-stroller",
+            price: 1400, weight: 29, setup: "Stroller + DEMI series bassinet", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .96,
+            scores: { lift: 1, ride: 5, trail: 4, basket: 5, car: 4, value: 2, finish: 5 },
+            tradeoff: "The huge basket and cushioned ride come with a 29 lb lift and premium setup cost."
+          },
+          {
+            id: "nuna-swiv", brand: "Nuna", formFactor: "full-size", propulsion: "standard",
+            name: "Nuna SWIV + PIPA urbn", shortName: "Nuna SWIV",
+            description: "A polished stroller with 360-degree rotating wheels, smooth suspension, and a 22 lb basket.",
+            url: "https://nunababy.com/usa/swiv-stroller",
+            price: 1400, weight: 21.8, setup: "PIPA urbn travel system", primaryMode: "car",
+            modes: { flat: "unsupported", bassinet: "optional", car: "primary" }, baselineFit: .96,
+            scores: { lift: 4, ride: 5, trail: 3, basket: 5, car: 5, value: 2, finish: 5 },
+            tradeoff: "The rotating-wheel system is costly and prioritizes maneuverability over rough-path tires."
+          },
+          {
+            id: "nuna-triv-lx", brand: "Nuna", formFactor: "full-size", propulsion: "standard",
+            name: "Nuna TRIV lx", shortName: "Nuna TRIV lx",
+            description: "A lighter reversible stroller with carriage mode, all-terrain suspension, and a 22 lb basket.",
+            url: "https://nunababy.com/usa/all-products/triv-lx-stroller",
+            price: 950, weight: 21.1, setup: "Carriage-mode seat included", primaryMode: "flat",
+            modes: { flat: "primary", bassinet: "optional", car: "optional" }, baselineFit: .97,
+            scores: { lift: 4, ride: 5, trail: 4, basket: 5, car: 4, value: 3, finish: 5 },
+            tradeoff: "Its premium price is close to larger stroller systems despite the lighter frame."
+          },
+          {
+            id: "nuna-triv-next", brand: "Nuna", formFactor: "full-size", propulsion: "standard",
+            name: "Nuna TRIV next + PIPA urbn", shortName: "Nuna TRIV next",
+            description: "An agile reversible stroller and baseless infant car-seat system for frequent city and car transitions.",
+            url: "https://nunababy.com/usa/triv-next-stroller",
+            price: 1200, weight: 18.4, setup: "PIPA urbn travel system", primaryMode: "car",
+            modes: { flat: "unsupported", bassinet: "optional", car: "primary" }, baselineFit: .92,
+            scores: { lift: 4, ride: 4, trail: 3, basket: 3, car: 5, value: 3, finish: 5 },
+            tradeoff: "Its newborn-ready travel-system total is high for a mid-size basket and wheel package."
+          },
+          {
+            id: "nuna-mixx-next", brand: "Nuna", formFactor: "full-size", propulsion: "standard",
+            name: "Nuna MIXX next", shortName: "Nuna MIXX next",
+            description: "A polished everyday ride with a true-flat newborn mode and excellent suspension.",
+            url: "https://nunababy.com/usa/mixx-next-compact-stroller",
+            price: 650, weight: 28.3, setup: "True-flat seat included", primaryMode: "flat",
+            modes: { flat: "primary", bassinet: "optional", car: "optional" }, baselineFit: .95,
+            scores: { lift: 2, ride: 5, trail: 4, basket: 4, car: 4, value: 4, finish: 4 },
+            tradeoff: "The smooth ride comes with one of the heavier frames here."
+          },
+          {
+            id: "nuna-trvl-lx", brand: "Nuna", formFactor: "compact-travel", propulsion: "standard",
+            name: "Nuna TRVL lx", shortName: "Nuna TRVL lx",
+            description: "A 14.6 lb compact stroller with a newborn carriage position and direct PIPA attachment.",
+            url: "https://nunababy.com/usa/trvl-lx-stroller",
+            price: 600, weight: 14.6, setup: "Carriage-mode seat included", primaryMode: "flat",
+            modes: { flat: "primary", bassinet: "unsupported", car: "optional" }, baselineFit: .94,
+            scores: { lift: 5, ride: 4, trail: 3, basket: 3, car: 5, value: 4, finish: 5 },
+            tradeoff: "The smaller basket and wheels cannot match a full-size stroller on long rough walks."
+          },
+          {
+            id: "nuna-trvl-pipa-rx", brand: "Nuna", formFactor: "compact-travel", propulsion: "standard",
+            name: "Nuna TRVL + PIPA rx", shortName: "Nuna TRVL",
+            description: "A 13.6 lb stroller paired with a newborn car seat for quick city and travel days.",
+            url: "https://nunababy.com/usa/trvl-pipa-rx-travel-system",
+            price: 699.99, weight: 13.6, setup: "PIPA rx car seat included", primaryMode: "car",
+            modes: { flat: "unsupported", bassinet: "unsupported", car: "primary" }, baselineFit: .88,
+            scores: { lift: 5, ride: 3, trail: 2, basket: 2, car: 5, value: 4, finish: 4 },
+            tradeoff: "Compact wheels and basket favor pavement over rough paths."
+          },
+          {
+            id: "nuna-tavo-next", brand: "Nuna", formFactor: "full-size", propulsion: "standard",
+            name: "Nuna TAVO next", shortName: "Nuna TAVO next",
+            description: "A value-focused stroller with a newborn-ready flat seat and direct PIPA car-seat attachment.",
+            url: "https://nunababy.com/usa/tavo-next-stroller",
+            price: 525, weight: 23.2, setup: "Flat seat + newborn insert included", primaryMode: "flat",
+            modes: { flat: "primary", bassinet: "unsupported", car: "optional" }, baselineFit: .91,
+            scores: { lift: 3, ride: 4, trail: 3, basket: 4, car: 5, value: 5, finish: 4 },
+            tradeoff: "It does not offer the reversible seat or bassinet path of Nuna's modular models."
+          },
+          {
+            id: "nuna-tavo", brand: "Nuna", formFactor: "full-size", propulsion: "standard",
+            name: "Nuna TAVO", shortName: "Nuna TAVO",
+            description: "A straightforward newborn-ready stroller with a flat seat and adapter-free PIPA connection.",
+            url: "https://nunababy.com/usa/strollers/newborn-strollers-bassinets/tavo-full-size-stroller",
+            price: 425, weight: 24.3, setup: "Flat seat included", primaryMode: "flat",
+            modes: { flat: "primary", bassinet: "unsupported", car: "optional" }, baselineFit: .88,
+            scores: { lift: 3, ride: 4, trail: 3, basket: 4, car: 5, value: 5, finish: 4 },
+            tradeoff: "It is less compact and less feature-rich than newer Nuna frames."
+          },
+          {
+            id: "nuna-ivvi-totl", brand: "Nuna", formFactor: "full-size", propulsion: "standard",
+            name: "Nuna IVVI totl", shortName: "Nuna IVVI totl",
+            description: "An all-inclusive bassinet-and-seat system with airless tires, progressive suspension, and accessories.",
+            url: "https://nunababy.com/usa/strollers/newborn-strollers-bassinets/ivvi-totl",
+            price: 800, weight: 29.8, setup: "Bassinet + seat + adapters included", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .90,
+            scores: { lift: 1, ride: 5, trail: 4, basket: 4, car: 4, value: 4, finish: 5 },
+            tradeoff: "The inclusive package is attractive, but the stroller is one of the heaviest to load."
+          },
+          {
+            id: "nuna-pipa-urbn-flex", brand: "Nuna", formFactor: "compact-travel", propulsion: "standard",
+            name: "Nuna PIPA urbn flex system", shortName: "PIPA urbn flex",
+            description: "A featherweight carbon-reinforced frame and baseless infant car seat with a 22 lb basket.",
+            url: "https://nunababy.com/usa/car-seats/infant-car-seats/pipa-urbn-flex-system",
+            price: 750, weight: 11.3, setup: "PIPA urbn + Flex frame + adapter", primaryMode: "car",
+            modes: { flat: "unsupported", bassinet: "optional", car: "primary" }, baselineFit: .95,
+            scores: { lift: 5, ride: 4, trail: 3, basket: 5, car: 5, value: 5, finish: 5 },
+            tradeoff: "A separate Flex seat or bassinet is needed once you stop using the infant car seat."
+          },
+          {
+            id: "thule-urban-glide-3", brand: "Thule", formFactor: "all-terrain", propulsion: "standard",
+            name: "Thule Urban Glide 3", shortName: "Urban Glide 3",
+            description: "An all-terrain specialist with air-filled tires, a hand brake, and a roomy newborn bassinet.",
+            url: "https://www.thule.com/en-us/strollers/jogging-strollers/thule-urban-glide-3-_-10101991",
+            price: 1099.90, weight: 26.2, setup: "Stroller + Thule bassinet", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .87,
+            scores: { lift: 2, ride: 5, trail: 5, basket: 4, car: 3, value: 3, finish: 4 },
+            tradeoff: "Its long three-wheel footprint needs more trunk and hallway space."
+          },
+          {
+            id: "thule-urban-glide-4-wheel", brand: "Thule", formFactor: "all-terrain", propulsion: "standard",
+            name: "Thule Urban Glide 4-wheel", shortName: "Urban Glide 4-wheel",
+            description: "A four-wheel all-terrain stroller with strong suspension, air-filled tires, and a bassinet bundle.",
+            url: "https://www.thule.com/en-us/strollers/stroller-bundles/thule-urban-glide-4-wheel-2-in-1-bundle-_-10101997b0",
+            price: 1099.90, weight: 28.7, setup: "Stroller + Thule bassinet", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .89,
+            scores: { lift: 2, ride: 5, trail: 4, basket: 4, car: 3, value: 3, finish: 4 },
+            tradeoff: "The extra front wheel improves stability but adds weight over the three-wheel model."
+          },
+          {
+            id: "thule-glide-3", brand: "Thule", formFactor: "all-terrain", propulsion: "standard",
+            name: "Thule Glide 3", shortName: "Thule Glide 3",
+            description: "A performance running stroller with a fixed front wheel, 18-inch rears, and an integrated hand brake.",
+            url: "https://www.thule.com/en-us/strollers/jogging-strollers/thule-glide-3-_-10101970",
+            price: 1149.90, weight: 24.9, setup: "Stroller + Thule bassinet", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .88,
+            scores: { lift: 3, ride: 5, trail: 5, basket: 3, car: 3, value: 2, finish: 4 },
+            tradeoff: "The fixed front wheel is specialized for running, not tight shops, and newborns must not ride while jogging."
+          },
+          {
+            id: "thule-spring-2", brand: "Thule", formFactor: "compact-travel", propulsion: "standard",
+            name: "Thule Spring 2", shortName: "Thule Spring 2",
+            description: "A compact three-wheel stroller with an 8.5-inch lockable front wheel and one-hand standing fold.",
+            url: "https://www.thule.com/en-us/strollers/compact-strollers/thule-spring-2-_-11300255",
+            price: 819.85, weight: 23.8, setup: "Stroller + bassinet + adapter", primaryMode: "bassinet",
+            modes: { flat: "optional", bassinet: "primary", car: "optional" }, baselineFit: .91,
+            scores: { lift: 3, ride: 4, trail: 4, basket: 3, car: 3, value: 4, finish: 4 },
+            tradeoff: "It is compact when folded but not especially light for frequent stair carries."
+          },
+          {
+            id: "uppababy-cruz-v3", brand: "UPPAbaby", formFactor: "full-size", propulsion: "standard",
+            name: "UPPAbaby Cruz V3", shortName: "UPPAbaby Cruz V3",
+            description: "A refined full-size single with an included lie-flat newborn mode and an unusually large basket.",
+            url: "https://uppababy.com/strollers/full-size/cruz-v3/",
+            price: 899.99, weight: 26.5, setup: "Lay-flat mode + infant insert included", primaryMode: "flat",
+            modes: { flat: "primary", bassinet: "optional", car: "optional" }, baselineFit: 1,
+            scores: { lift: 3, ride: 4, trail: 4, basket: 5, car: 4, value: 3, finish: 5 },
+            tradeoff: "A car seat or bassinet raises the cost beyond the listed setup."
+          },
+          {
+            id: "uppababy-minu-v3", brand: "UPPAbaby", formFactor: "compact-travel", propulsion: "standard",
+            name: "UPPAbaby Minu V3", shortName: "UPPAbaby Minu V3",
+            description: "A 16.7 lb overhead-friendly stroller with a newborn carriage mode and a 20 lb basket.",
+            url: "https://uppababy.com/strollers/lightweight/minu-v3/",
+            price: 499.99, weight: 16.7, setup: "Carriage-mode seat included", primaryMode: "flat",
+            modes: { flat: "primary", bassinet: "unsupported", car: "optional" }, baselineFit: .96,
+            scores: { lift: 5, ride: 4, trail: 3, basket: 5, car: 4, value: 5, finish: 5 },
+            tradeoff: "Its compact wheels cannot deliver the rough-ground composure of a full-size or jogging stroller."
+          },
+          {
+            id: "uppababy-ridge-v2", brand: "UPPAbaby", formFactor: "all-terrain", propulsion: "standard",
+            name: "UPPAbaby Ridge V2", shortName: "UPPAbaby Ridge V2",
+            description: "A rugged running stroller with never-flat 12- and 16-inch tires, a disc hand brake, and patented suspension.",
+            url: "https://uppababy.com/strollers/full-size/ridge-v2/",
+            price: 1019.97, weight: 30, setup: "Stroller + Bassinet V3 + adapter", primaryMode: "bassinet",
+            modes: { flat: "unsupported", bassinet: "primary", car: "optional" }, baselineFit: .92,
+            scores: { lift: 1, ride: 5, trail: 5, basket: 4, car: 3, value: 4, finish: 5 },
+            tradeoff: "Its rugged frame is among the heaviest here, and newborns must not ride while jogging."
+          }
+        ]
+      };
+
+      var strollers = catalog.products;
 
       var state = {
         step: 0,
         answers: {
           route: null,
           setup: null,
+          propulsion: null,
           lifting: null,
           priorities: []
         }
@@ -2432,6 +2708,7 @@
         state.answers = {
           route: null,
           setup: null,
+          propulsion: null,
           lifting: null,
           priorities: []
         };
@@ -2575,6 +2852,19 @@
         });
       }
 
+      function getSelectedSetup(stroller, preferredMode) {
+        if (preferredMode === "flexible" || stroller.primaryMode === preferredMode) {
+          return stroller.setup;
+        }
+        if (preferredMode === "flat") {
+          return "Manufacturer-approved flat newborn accessory/setup";
+        }
+        if (preferredMode === "bassinet") {
+          return "Compatible newborn bassinet + required adapter(s)";
+        }
+        return "Compatible infant car seat + required adapter(s)";
+      }
+
       function calculateMatches() {
         var weights = {};
         dimensions.forEach(function (dimension) { weights[dimension] = 1; });
@@ -2594,8 +2884,14 @@
           return sum + weights[dimension];
         }, 0);
         var preferredMode = state.answers.setup;
+        var preferredPropulsion = state.answers.propulsion;
+        var eligibleStrollers = strollers.filter(function (stroller) {
+          var propulsionMatches = stroller.propulsion === preferredPropulsion;
+          var modeMatches = preferredMode === "flexible" || stroller.modes[preferredMode] !== "unsupported";
+          return propulsionMatches && modeMatches;
+        });
 
-        return strollers.map(function (stroller) {
+        return eligibleStrollers.map(function (stroller) {
           var weightedScore = dimensions.reduce(function (sum, dimension) {
             return sum + stroller.scores[dimension] * weights[dimension];
           }, 0);
@@ -2611,6 +2907,7 @@
             match: match,
             dimensionFit: dimensionFit,
             modeFit: modeFit,
+            setup: getSelectedSetup(stroller, preferredMode),
             weights: weights
           });
         }).sort(function (a, b) {
@@ -2718,8 +3015,8 @@
       function buildMetric(topThree, key) {
         var isPrice = key === "price";
         var maxValue = Math.max.apply(null, topThree.map(function (stroller) { return stroller[key]; }));
-        var title = isPrice ? "Newborn-ready total" : "Listed stroller weight";
-        var note = isPrice ? "Approx. US list price" : "Configurations vary";
+        var title = isPrice ? "Listed price from" : "Listed stroller weight";
+        var note = isPrice ? "Selected accessories may add cost" : "Configurations vary";
         var rows = topThree.map(function (stroller) {
           var width = Math.max(7, (stroller[key] / maxValue) * 100);
           return '<div class="metric-row">' +
@@ -2737,6 +3034,42 @@
 
       function renderResults() {
         var matches = calculateMatches();
+        var dataGrid = document.getElementById("data-grid");
+        var shortlistSection = document.getElementById("shortlist-section");
+
+        if (!matches.length) {
+          document.getElementById("results-kicker").textContent = "No compatible setup in this catalog";
+          document.getElementById("results-title").textContent = "One choice needs adjusting.";
+          document.getElementById("results-lead").textContent = state.answers.propulsion === "powered"
+            ? "The reviewed powered model requires a newborn bassinet or compatible infant car seat. Choose either mode, or switch to a standard stroller."
+            : "No reviewed standard stroller supports this exact newborn setup. Adjust the setup or push-style answer to continue.";
+          document.getElementById("winner-container").innerHTML =
+            '<article class="winner-panel">' +
+              '<div class="winner-copy">' +
+                '<span class="winner-rank">Compatibility first</span>' +
+                '<h2 class="winner-title">No safe catalog match for these answers</h2>' +
+                '<p class="winner-description">The matcher will not fill your short list with a stroller that lacks the newborn mode you selected.</p>' +
+                '<div class="winner-actions"><button class="button button-primary" id="no-match-adjust-button" type="button">Adjust answers</button></div>' +
+              '</div>' +
+            '</article>';
+          dataGrid.innerHTML = "";
+          dataGrid.hidden = true;
+          document.getElementById("recommendation-grid").innerHTML = "";
+          shortlistSection.hidden = true;
+          showView(resultsView);
+          document.getElementById("no-match-adjust-button").addEventListener("click", adjustAnswers);
+          window.requestAnimationFrame(function () {
+            document.getElementById("results-title").focus({ preventScroll: true });
+          });
+          announcer.textContent = "No compatible stroller was found. Adjust your newborn setup or push style.";
+          return;
+        }
+
+        document.getElementById("results-kicker").textContent = "Your short list is ready";
+        document.getElementById("results-title").textContent = "A clearer first step.";
+        document.getElementById("results-lead").textContent = "Ranked for Central Richmond, a Tesla SUV, your newborn setup, and your priorities—not a generic best-of list.";
+        dataGrid.hidden = false;
+        shortlistSection.hidden = false;
         var topThree = matches.slice(0, 3);
         var winner = topThree[0];
         var winnerReasons = getReasons(winner, 3);
@@ -2750,7 +3083,7 @@
               '<div class="winner-meta">' +
                 '<div class="meta-pill"><span>Primary location</span><strong>Central Richmond, SF</strong></div>' +
                 '<div class="meta-pill"><span>Primary vehicle</span><strong>' + recommendationProfile.vehicle + '</strong></div>' +
-                '<div class="meta-pill"><span>Newborn-ready from</span><strong>' + formatPrice(winner.price) + '</strong></div>' +
+                '<div class="meta-pill"><span>Listed price from</span><strong>' + formatPrice(winner.price) + '</strong></div>' +
                 '<div class="meta-pill"><span>Listed weight</span><strong>' + formatWeight(winner.weight) + '</strong></div>' +
                 '<div class="meta-pill"><span>Day-one setup</span><strong>' + winner.setup + '</strong></div>' +
               '</div>' +
@@ -2768,7 +3101,7 @@
             '</div>' +
           '</article>';
 
-        document.getElementById("data-grid").innerHTML =
+        dataGrid.innerHTML =
           '<section class="data-card" aria-labelledby="profile-title">' +
             '<div class="card-heading-row">' +
               '<div><p class="section-kicker">Fit profile</p><h2 id="profile-title">Why it rose to the top</h2></div>' +
@@ -2794,7 +3127,7 @@
             '<h3>' + stroller.name + '</h3>' +
             '<p class="setup-label">' + stroller.setup + '</p>' +
             '<div class="card-number-row">' +
-              '<div class="card-number"><span>Ready from</span><strong>' + formatPrice(stroller.price) + '</strong></div>' +
+              '<div class="card-number"><span>Price from</span><strong>' + formatPrice(stroller.price) + '</strong></div>' +
               '<div class="card-number"><span>Weight</span><strong>' + formatWeight(stroller.weight) + '</strong></div>' +
             '</div>' +
             '<div class="card-reasons">' + reasons.map(function (reason) { return '<span class="card-reason">' + reason + '</span>'; }).join("") + '</div>' +
@@ -2861,6 +3194,10 @@
         }
       });
 
+      document.querySelectorAll("[data-catalog-count]").forEach(function (item) {
+        item.textContent = strollers.length;
+      });
+      document.getElementById("catalog-version").textContent = catalog.version;
       updateSnapshot();
     }());
   </script>

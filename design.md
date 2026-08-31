@@ -1,12 +1,12 @@
 # Inventory and recommendation design
 
-- Status: Proposed
+- Status: Current implementation documented; versioned JSON architecture proposed
 - Audience: Engineers
 - Last updated: 2026-08-30
 
 ## 1. Summary
 
-First Stroll is a static, client-side stroller matcher. Today, its questions, product inventory, scoring data, and recommendation logic all live in `index.html`. This document records that behavior and specifies a future versioned catalog and recommendation algorithm.
+First Stroll is a static, client-side stroller matcher. Today, its versioned runtime catalog, questions, scoring data, and recommendation logic all live in `index.html`. This document records that behavior and specifies a future external JSON catalog and recommendation algorithm.
 
 The target design keeps ranking deterministic, local, auditable, and explainable. It does not introduce a service, database, user tracking, learned model, budget input, or automated catalog refresh.
 
@@ -46,21 +46,21 @@ Those files are proposed interfaces, not part of the current implementation. The
 - Infer an exact Tesla model, cargo opening, trunk volume, or fit guarantee from the generic vehicle label.
 - Scrape, schedule, auto-refresh, or auto-merge product changes.
 - Add server-side ranking, personalization, analytics, experimentation, or machine learning.
-- Change the current application as part of this documentation task.
 
 ## 3. Current implementation
 
 ### 3.1 Inventory
 
-`index.html` currently contains seven inline stroller objects:
+`index.html` currently contains catalog version `2026-08-30.1`, reviewed August 30, 2026, with 35 inline stroller objects across the six approved brands:
 
-- Mockingbird Single Stroller 3.0
-- Nuna MIXX next
-- Chicco Corso LE ClearTex
-- Nuna TRVL + PIPA rx
-- UPPAbaby Cruz V3
-- Thule Urban Glide 3
-- Bugaboo Fox 5 Renew
+- Bugaboo (3): Butterfly 2 Plus, Dragonfly Plus, and Fox 5 Renew.
+- CYBEX (8): Coya, Libelle, Beezy, Balios S Lux, Priam, Mios, Avi Spin, and e-Priam.
+- Joolz (5): Aer², Aer+ Newborn Bundle, Hub², Hub+, and Day+.
+- Nuna (12): VIAA cabn, DEMI icon, SWIV, TRIV lx, TRIV next, MIXX next, TRVL lx, TRVL + PIPA rx, TAVO next, TAVO, IVVI totl, and PIPA urbn flex system.
+- Thule (4): Urban Glide 3, Urban Glide 4-wheel, Glide 3, and Spring 2.
+- UPPAbaby (3): Cruz V3, Minu V3, and Ridge V2.
+
+Mockingbird and Chicco were removed because they fall outside the approved-brand boundary. Convertible-double and side-by-side models remain excluded. The powered CYBEX e-Priam shares the catalog but is isolated from standard strollers during recommendation.
 
 Each object contains identity and display fields, one representative `price`, one listed `weight`, a primary newborn setup, a support level for each newborn mode, a `baselineFit`, seven editorial 1–5 scores, and a tradeoff.
 
@@ -69,11 +69,11 @@ The current structure has four material limitations:
 1. Product data and executable UI code change together.
 2. A single price cannot represent optional flat-seat, bassinet, and car-seat configurations with different required components.
 3. The 1–5 scores and `baselineFit` values are assertions without a machine-checkable rubric or field-level evidence.
-4. The catalog mixes market segments; Mockingbird and Chicco fall outside the target premium scope.
+4. Product facts have manufacturer detail URLs but not yet the field-level evidence map required by the target schema.
 
 ### 3.2 Questions and weights
 
-The current algorithm uses seven dimensions:
+The current quiz has five questions: route, newborn setup, propulsion, lifting frequency, and two priorities. The algorithm uses seven dimensions:
 
 `lift`, `ride`, `trail`, `basket`, `car`, `value`, and `finish`.
 
@@ -106,13 +106,14 @@ For product \(p\), the current dimension fit is:
 dimensionFit(p) = sum(score[p,d] * weight[d]) / (5 * sum(weight[d]))
 ```
 
-The selected newborn mode produces a second factor:
+Propulsion is an eligibility filter rather than a score: standard and powered products never share a recommendation pool. When the user chooses a specific newborn mode, products that mark it `unsupported` are also removed before ranking. A flexible setup uses every product in the selected propulsion pool.
+
+For eligible products, the selected newborn mode produces a second factor:
 
 | Mode support | `modeFit` |
 | --- | ---: |
 | Primary | 1.00 |
 | Optional | 0.75 |
-| Unsupported | 0.35 |
 | User selected flexible | 1.00 |
 
 The displayed match is:
@@ -121,18 +122,17 @@ The displayed match is:
 match = round(100 * (0.72 * dimensionFit + 0.20 * modeFit + 0.08 * baselineFit))
 ```
 
-Products are sorted by displayed match descending, price ascending, then weight ascending. Unsupported newborn modes remain eligible because they receive a penalty rather than being filtered out.
+Products are sorted by displayed match descending, price ascending, then weight ascending. If the selected propulsion and newborn setup have no compatible product, the UI returns an explicit no-match state instead of inserting an incompatible stroller.
 
 Recommendation reasons are based on `score * weight` contributions. The implementation sorts contributions descending, takes up to two dimensions with a score of at least 4, and fills any remaining reason slots with the next highest contributions.
 
 ### 3.3 Current-state risks
 
-- A product can rank despite not supporting the requested newborn mode.
 - `baselineFit` adds opaque product-level bias.
 - Price influences ties even though the quiz does not ask for a budget.
 - The `value` dimension indirectly reintroduces price without a stable definition.
 - Sorting uses rounded scores, so products with different raw fits can tie unnecessarily.
-- Optional configurations display the representative product price rather than the selected configuration's total.
+- Optional configurations display a representative listed price rather than the selected configuration's exact total.
 - There is no catalog or algorithm version in a recommendation result.
 - The current profile is an inline JavaScript constant rather than independently versioned configuration.
 
