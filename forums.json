@@ -1,0 +1,1803 @@
+{
+  "schemaVersion": 1,
+  "researchedOn": "2026-08-30",
+  "scope": {
+    "topic": "Public stroller forums and sampled community insights",
+    "marketPriority": [
+      "San Francisco Bay Area",
+      "United States"
+    ],
+    "language": "English",
+    "threadPublishedFrom": "2024-08-30",
+    "threadPublishedThrough": "2026-08-30",
+    "communityCount": 10,
+    "threadsPerCommunity": {
+      "minimum": 2,
+      "maximum": 4
+    },
+    "catalogVersion": "2026-08-30.1",
+    "catalogProductCount": 35,
+    "sourceTypes": [
+      "reddit",
+      "public-web-forum"
+    ]
+  },
+  "methodology": {
+    "communitySelection": "Prioritize public San Francisco and Bay Area discussions, then US product and parenting communities, followed by at most two English-language non-US communities that add useful model or use-case coverage.",
+    "threadInclusion": "Include directly readable threads in the date window that contain firsthand experience, a substantive comparison, or a recurring decision factor relevant to newborn-ready single strollers.",
+    "threadExclusion": "Exclude deleted or removed posts, login-only content, affiliate-led or promotional posts, duplicate cross-posts, and threads too thin to support a useful summary.",
+    "sampling": "Select two threads per community and balance hills, rough sidewalks, public transit, stairs, newborn configurations, trunk loading, compact travel, all-terrain use, price, resale, and in-person testing. The sample is curated rather than exhaustive or statistically representative.",
+    "catalogMapping": "Assign catalogProductId only when the sampled text names an unambiguous current model or version. Older generations, bare family names, and non-catalog products remain family-or-version-ambiguous or out-of-catalog and never roll into a current product finding.",
+    "sentimentScale": {
+      "positive": "Specific ownership satisfaction or recommendation predominates in the sampled thread.",
+      "mixed": "The sampled discussion contains material praise and drawbacks or meaningful disagreement.",
+      "negative": "Specific rejection, regret, or ownership problems predominate in the sampled thread.",
+      "insufficient": "The model is only considered, mentioned, or supported by too little firsthand evidence for a directional label."
+    },
+    "aggregation": "A product-level positive, mixed, or negative label requires at least two substantive exact-model signals from independent threads. Positive requires positive signals to predominate without a negative signal; negative uses the converse rule; ties, repeated tradeoffs, or conflicting directions are mixed. Otherwise the aggregate is insufficient. Votes and reply counts are not weights.",
+    "privacy": "Store no usernames, profile links, or verbatim excerpts. Summaries paraphrase only the product and use-case information needed for review.",
+    "authorityBoundary": "Forum statements are anecdotal experience. They are not evidence for newborn approval, safety, compatibility, dimensions, price, or any other manufacturer-controlled fact and must not alter matcher eligibility or scoring without authoritative verification."
+  },
+  "forums": [
+    {
+      "id": "reddit-asksf",
+      "name": "r/AskSF",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/AskSF/",
+      "geographicFocus": "San Francisco, California",
+      "audience": "People seeking firsthand local advice about living in San Francisco",
+      "strollerRelevance": "high",
+      "whyUseful": "Directly addresses hills, broken sidewalks, Muni, compact restaurants, stairs, neighborhood walking, and the local used market.",
+      "accessedOn": "2026-08-30",
+      "threads": [
+        {
+          "id": "asksf-sf-hills-long-walks",
+          "title": "Favorite baby strollers for SF hills and long walks?",
+          "url": "https://www.reddit.com/r/AskSF/comments/1t3p2lb/favorite_baby_strollers_for_sf_hills_and_long/",
+          "publishedOn": "2026-05-04",
+          "contextTags": [
+            "san-francisco",
+            "hills",
+            "rough-sidewalks",
+            "public-transit",
+            "stairs",
+            "newborn",
+            "basket",
+            "compact-travel"
+          ],
+          "summary": "SF parents repeatedly balance larger wheels, suspension, and storage for hills and sidewalk cracks against width, lifting weight, restaurant space, and broken transit elevators. Several describe a full-size stroller plus a compact stroller or carrier as more practical than one universal choice.",
+          "productSignals": [
+            {
+              "mentionedName": "Joolz Aer 2",
+              "catalogMatch": "exact",
+              "catalogProductId": "joolz-aer-2",
+              "sentiment": "positive",
+              "summary": "An owner describes it as the compact choice for restaurants and short outings alongside a larger stroller, with easier storage in tight spaces."
+            },
+            {
+              "mentionedName": "CYBEX e-Priam",
+              "catalogMatch": "exact",
+              "catalogProductId": "cybex-e-priam",
+              "sentiment": "mixed",
+              "summary": "Electric hill assistance and downhill control draw strong local praise, while commenters warn that the powered chassis is heavy when stairs require carrying."
+            },
+            {
+              "mentionedName": "Nuna MIXX",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "Owners value storage, long-day utility, and the newborn bassinet, but the discussion does not identify a specific MIXX generation."
+            },
+            {
+              "mentionedName": "UPPAbaby Cruz",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "The Cruz family is repeatedly favored as a hill-capable but less bulky alternative to the Vista; no version is established."
+            },
+            {
+              "mentionedName": "Bugaboo Butterfly",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "mixed",
+              "summary": "Compact fold, carrying strap, and travel use are praised, while newborn use is described as requiring the right accessory or configuration."
+            }
+          ]
+        },
+        {
+          "id": "asksf-stroller-sf-living",
+          "title": "Parents Question --Which Stroller to buy for SF living?",
+          "url": "https://www.reddit.com/r/AskSF/comments/1ir33q4/parents_question_which_stroller_to_buy_for_sf/",
+          "publishedOn": "2025-02-16",
+          "contextTags": [
+            "san-francisco",
+            "hills",
+            "daily-walking",
+            "rough-sidewalks",
+            "compact-travel",
+            "used-market"
+          ],
+          "summary": "First-time parents compare a lighter travel stroller with a sturdier city stroller for daily SF hills and uneven pavement. Replies favor testing the push and lift personally and note that strong resale makes changing strollers less costly when real routines become clearer.",
+          "productSignals": [
+            {
+              "mentionedName": "UPPAbaby Cruz",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "Multiple replies recommend the Cruz as smaller than the Vista while retaining a stable city ride, but do not identify a generation."
+            },
+            {
+              "mentionedName": "UPPAbaby Vista",
+              "catalogMatch": "out-of-catalog",
+              "catalogProductId": null,
+              "sentiment": "mixed",
+              "summary": "The Vista is described as durable and capable on hills but potentially too large or heavy for tight urban spaces."
+            },
+            {
+              "mentionedName": "Stokke YOYO",
+              "catalogMatch": "out-of-catalog",
+              "catalogProductId": null,
+              "sentiment": "mixed",
+              "summary": "Its portability attracts interest, while commenters question whether small wheels are the best fit for repeated rough-pavement walks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reddit-bayarea",
+      "name": "r/bayarea",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/bayarea/",
+      "geographicFocus": "San Francisco Bay Area, California",
+      "audience": "Bay Area residents discussing regional services, shopping, and daily life",
+      "strollerRelevance": "moderate",
+      "whyUseful": "Shows where local parents can physically compare premium strollers, practice folding, test weighted handling, and check vehicle fit.",
+      "accessedOn": "2026-08-30",
+      "threads": [
+        {
+          "id": "bayarea-try-strollers",
+          "title": "Is there a place we’re able to try out different strollers?",
+          "url": "https://www.reddit.com/r/bayarea/comments/1vn0oms/is_there_a_place_were_able_to_try_out_different/",
+          "publishedOn": "2026-08-13",
+          "contextTags": [
+            "bay-area",
+            "test-in-person",
+            "fold",
+            "trunk-loading",
+            "used-market",
+            "premium"
+          ],
+          "summary": "Bay Area parents strongly recommend hands-on comparison at specialist stores or larger department stores. Useful tests include adding sample weight, folding without assistance, measuring a trunk opening, and confirming that both caregivers can lift the stroller.",
+          "productSignals": [
+            {
+              "mentionedName": "UPPAbaby Cruz",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "One owner reports heavy use followed by strong resale value, but the stroller generation is not stated."
+            }
+          ]
+        },
+        {
+          "id": "bayarea-baby-gear",
+          "title": "Baby Gear Bay Area",
+          "url": "https://www.reddit.com/r/bayarea/comments/1kvc5zo/baby_gear_bay_area/",
+          "publishedOn": "2025-05-25",
+          "contextTags": [
+            "bay-area",
+            "test-in-person",
+            "retail-access",
+            "used-market"
+          ],
+          "summary": "Parents identify local stores with stroller and car-seat floor models, knowledgeable staff, and appointments for comparing systems. The thread also recommends considering used gear for stroller components while treating safety-sensitive items separately.",
+          "productSignals": []
+        }
+      ]
+    },
+    {
+      "id": "reddit-buyingforbaby",
+      "name": "r/Buyingforbaby",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/Buyingforbaby/",
+      "geographicFocus": "International with substantial US participation",
+      "audience": "Parents comparing baby products, prices, and real-world ownership tradeoffs",
+      "strollerRelevance": "high",
+      "whyUseful": "Contains current, model-specific comparisons among premium US stroller options and detailed ownership reports about fold, ride, travel, and newborn use.",
+      "accessedOn": "2026-08-30",
+      "threads": [
+        {
+          "id": "buyingforbaby-stroller-advice",
+          "title": "Stroller Advice",
+          "url": "https://www.reddit.com/r/Buyingforbaby/comments/1uzoiae/stroller_advice/",
+          "publishedOn": "2026-07-18",
+          "contextTags": [
+            "compact-travel",
+            "one-hand-fold",
+            "newborn",
+            "car-dependent",
+            "rough-sidewalks"
+          ],
+          "summary": "A current comparison of four premium compact strollers shows that low weight and a one-hand fold do not guarantee a comfortable push on curb ramps or rough pavement. Owners distinguish between travel-first models and strollers robust enough to be the only daily stroller.",
+          "productSignals": [
+            {
+              "mentionedName": "Nuna TRVL lx",
+              "catalogMatch": "exact",
+              "catalogProductId": "nuna-trvl-lx",
+              "sentiment": "mixed",
+              "summary": "Compact folding and car use are attractive, but an owner dislikes the ride over curb ramps and bumps when it serves as a full-time stroller."
+            },
+            {
+              "mentionedName": "Joolz Aer 2",
+              "catalogMatch": "exact",
+              "catalogProductId": "joolz-aer-2",
+              "sentiment": "positive",
+              "summary": "Several owners praise the one-hand fold, low weight, maneuverability, naps, and overhead-bin travel; one comparison finds it less substantial than the Butterfly."
+            },
+            {
+              "mentionedName": "CYBEX Coya",
+              "catalogMatch": "exact",
+              "catalogProductId": "cybex-coya",
+              "sentiment": "insufficient",
+              "summary": "It is a named finalist, but the sampled replies do not provide enough firsthand Coya ownership detail for a directional label."
+            },
+            {
+              "mentionedName": "UPPAbaby Cruz V3",
+              "catalogMatch": "exact",
+              "catalogProductId": "uppababy-cruz-v3",
+              "sentiment": "negative",
+              "summary": "One owner strongly prefers the Aer 2 for everyday maneuverability and fold convenience, making this a single comparative signal rather than broad rejection."
+            },
+            {
+              "mentionedName": "UPPAbaby Minu V3",
+              "catalogMatch": "exact",
+              "catalogProductId": "uppababy-minu-v3",
+              "sentiment": "insufficient",
+              "summary": "It is suggested for a better push and suspension, but the recommendation is not paired with direct use in this thread."
+            },
+            {
+              "mentionedName": "Nuna TRIV lx",
+              "catalogMatch": "exact",
+              "catalogProductId": "nuna-triv-lx",
+              "sentiment": "insufficient",
+              "summary": "The model appears only as a size and feature comparison, without an ownership assessment."
+            },
+            {
+              "mentionedName": "Bugaboo Butterfly 2",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "mixed",
+              "summary": "Owners praise the build and fold but disagree about US newborn suitability and forward-facing-only use; the catalog's Plus variant is not named."
+            }
+          ]
+        },
+        {
+          "id": "buyingforbaby-serious-money",
+          "title": "About to spend serious money on a stroller… what would you buy today and why?",
+          "url": "https://www.reddit.com/r/Buyingforbaby/comments/1s7beuh/about_to_spend_serious_money_on_a_stroller_what/",
+          "publishedOn": "2026-03-30",
+          "contextTags": [
+            "premium",
+            "value",
+            "full-size",
+            "compact-travel",
+            "newborn",
+            "trunk-loading",
+            "two-stroller-strategy"
+          ],
+          "summary": "Experienced owners reject a single premium hierarchy: full-size strollers win on suspension, basket space, and long walks, while compact models often become the most-used choice for cars, restaurants, and travel. Bassinet utility, folded bulk, and buying secondhand recur more than brand prestige.",
+          "productSignals": [
+            {
+              "mentionedName": "Nuna TRVL lx",
+              "catalogMatch": "exact",
+              "catalogProductId": "nuna-trvl-lx",
+              "sentiment": "positive",
+              "summary": "An owner values the one-hand fold, compact-car fit, and adequate wheels and suspension for ordinary use."
+            },
+            {
+              "mentionedName": "Joolz Aer 2",
+              "catalogMatch": "exact",
+              "catalogProductId": "joolz-aer-2",
+              "sentiment": "mixed",
+              "summary": "Owners praise its light, quick fold and frequent use but note narrower rear wheels and less confidence for infants or rougher conditions."
+            },
+            {
+              "mentionedName": "Nuna SWIV",
+              "catalogMatch": "exact",
+              "catalogProductId": "nuna-swiv",
+              "sentiment": "insufficient",
+              "summary": "It is a named premium candidate, but sampled comments do not establish a sufficiently detailed ownership pattern."
+            },
+            {
+              "mentionedName": "Nuna MIXX next",
+              "catalogMatch": "exact",
+              "catalogProductId": "nuna-mixx-next",
+              "sentiment": "insufficient",
+              "summary": "The model is considered and compared favorably with SWIV, but the thread does not provide a replicated exact-model ownership signal."
+            },
+            {
+              "mentionedName": "Nuna TRIV next",
+              "catalogMatch": "exact",
+              "catalogProductId": "nuna-triv-next",
+              "sentiment": "insufficient",
+              "summary": "It appears in the premium shortlist without enough exact-model firsthand detail for direction."
+            },
+            {
+              "mentionedName": "CYBEX Priam",
+              "catalogMatch": "exact",
+              "catalogProductId": "cybex-priam",
+              "sentiment": "insufficient",
+              "summary": "It appears in the original comparison but does not receive enough substantive exact-model discussion."
+            },
+            {
+              "mentionedName": "UPPAbaby Cruz V2",
+              "catalogMatch": "out-of-catalog",
+              "catalogProductId": null,
+              "sentiment": "mixed",
+              "summary": "Owners value ride quality, basket space, and newborn bassinet use while repeatedly criticizing folded bulk and car handling."
+            },
+            {
+              "mentionedName": "Doona",
+              "catalogMatch": "out-of-catalog",
+              "catalogProductId": null,
+              "sentiment": "negative",
+              "summary": "Several comments describe short useful life, weight, poor rolling behavior, and limited value outside taxi or airport scenarios."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reddit-newparents",
+      "name": "r/NewParents",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/NewParents/",
+      "geographicFocus": "International with substantial North American participation",
+      "audience": "New parents discussing early practical routines and purchases",
+      "strollerRelevance": "high",
+      "whyUseful": "Connects stroller specifications to post-birth realities such as walk-up apartments, carrying while recovering, storage, car frequency, and changing preferences.",
+      "accessedOn": "2026-08-30",
+      "threads": [
+        {
+          "id": "newparents-stroller-recommendations",
+          "title": "Stroller Recommendations",
+          "url": "https://www.reddit.com/r/NewParents/comments/1k11her/stroller_recommendations/",
+          "publishedOn": "2025-04-17",
+          "contextTags": [
+            "city",
+            "walk-up",
+            "stairs",
+            "budget",
+            "winter",
+            "used-market",
+            "lifestyle-fit"
+          ],
+          "summary": "For a third-floor walk-up, respondents elevate weight, fold, storage location, and wheel size above brand. Several recommend used purchases and warn that a capable street stroller can still be too heavy for stairs, while a cheap umbrella stroller may become the most-used option.",
+          "productSignals": [
+            {
+              "mentionedName": "UPPAbaby Cruz",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "mixed",
+              "summary": "Parts availability and city performance are praised, but owners say it can be too heavy to carry with a baby in a walk-up."
+            },
+            {
+              "mentionedName": "Nuna MIXX",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "negative",
+              "summary": "One household reports that its expensive system saw less use than a very cheap umbrella stroller; the MIXX generation is not identified."
+            },
+            {
+              "mentionedName": "Chicco Bravo",
+              "catalogMatch": "out-of-catalog",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "Several owners praise the value, fold, and travel-system utility despite acknowledging some bulk."
+            }
+          ]
+        },
+        {
+          "id": "newparents-what-stroller",
+          "title": "What stroller should I get?",
+          "url": "https://www.reddit.com/r/NewParents/comments/1lg83sf/what_stroller_should_i_get/",
+          "publishedOn": "2025-06-20",
+          "contextTags": [
+            "daily-walking",
+            "travel",
+            "one-hand-fold",
+            "compact-travel",
+            "premium",
+            "two-stroller-strategy"
+          ],
+          "summary": "Responses repeatedly separate a smooth neighborhood stroller from a lighter travel or car stroller. Brand recommendations conflict, but owners consistently describe folded size, one-hand operation, terrain, and actual travel frequency as the deciding variables.",
+          "productSignals": [
+            {
+              "mentionedName": "Nuna TRIV next",
+              "catalogMatch": "exact",
+              "catalogProductId": "nuna-triv-next",
+              "sentiment": "positive",
+              "summary": "An owner praises its low weight, one-hand fold, and ability to manage ordinary dirt and rocks."
+            },
+            {
+              "mentionedName": "Joolz Hub 2",
+              "catalogMatch": "exact",
+              "catalogProductId": "joolz-hub-2",
+              "sentiment": "positive",
+              "summary": "An owner who rejected a heavier MIXX reports that the smaller frame remains sturdy on inconsistent city sidewalks."
+            },
+            {
+              "mentionedName": "Joolz Aer+",
+              "catalogMatch": "exact",
+              "catalogProductId": "joolz-aer-plus",
+              "sentiment": "positive",
+              "summary": "Owners describe it as a high-quality compact stroller that can cover daily and travel roles, with bassinet availability for early use."
+            },
+            {
+              "mentionedName": "Nuna SWIV",
+              "catalogMatch": "exact",
+              "catalogProductId": "nuna-swiv",
+              "sentiment": "positive",
+              "summary": "The thread contains a concise but direct owner endorsement of the SWIV."
+            },
+            {
+              "mentionedName": "UPPAbaby Cruz",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "mixed",
+              "summary": "Many praise the smooth push and durability while others find it heavy or bulky; versions are not consistently identified."
+            },
+            {
+              "mentionedName": "Bugaboo Fox 5",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "Owners praise rough-terrain capability, but the catalog's Fox 5 Renew variant is not named."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reddit-babybumps",
+      "name": "r/BabyBumps",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/BabyBumps/",
+      "geographicFocus": "International with substantial US participation",
+      "audience": "Expecting parents planning newborn gear and postpartum routines",
+      "strollerRelevance": "high",
+      "whyUseful": "Captures pre-purchase requirements around newborn modes, car-seat systems, one-hand operation, budget, and the uncertainty first-time buyers face.",
+      "accessedOn": "2026-08-30",
+      "threads": [
+        {
+          "id": "babybumps-best-stroller-for-me",
+          "title": "What's the best stroller for me?",
+          "url": "https://www.reddit.com/r/BabyBumps/comments/1jv9de9/whats_the_best_stroller_for_me/",
+          "publishedOn": "2025-04-09",
+          "contextTags": [
+            "suburban",
+            "trunk-loading",
+            "newborn",
+            "car-seat-compatibility",
+            "premium",
+            "compact-travel"
+          ],
+          "summary": "For a car-oriented one-child household, commenters steer the decision away from expandable doubles and toward compact but durable single strollers. Easy trunk handling, newborn accessories, and the option to add a separate travel stroller matter more than a universal best brand.",
+          "productSignals": [
+            {
+              "mentionedName": "UPPAbaby Minu",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "It is suggested as a more proportionate choice than the Vista for one child, but no generation is established."
+            },
+            {
+              "mentionedName": "Nuna TRVL",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "An owner values the small fold and direct PIPA attachment, without identifying the TRVL generation or bundle."
+            },
+            {
+              "mentionedName": "UPPAbaby Vista",
+              "catalogMatch": "out-of-catalog",
+              "catalogProductId": null,
+              "sentiment": "mixed",
+              "summary": "Owners praise the push and packed-dirt ability while acknowledging unnecessary bulk for some one-child, car-loading households."
+            }
+          ]
+        },
+        {
+          "id": "babybumps-tell-me-strollers",
+          "title": "Tell Me About Your Strollers!",
+          "url": "https://www.reddit.com/r/BabyBumps/comments/1o0kipf/tell_me_about_your_strollers/",
+          "publishedOn": "2025-10-07",
+          "contextTags": [
+            "newborn",
+            "one-hand-fold",
+            "city",
+            "budget",
+            "car-seat-compatibility",
+            "bassinet"
+          ],
+          "summary": "The strongest recurring requirement is being able to push, fold, and unfold while one hand is occupied. Replies also show that a car-seat-compatible stroller may still disappoint caregivers who expected a bassinet or parent-facing newborn mode for daily walks.",
+          "productSignals": [
+            {
+              "mentionedName": "Nuna TRIV",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "mixed",
+              "summary": "Owners like the light fold and direct car-seat use but regret the lack of the expected US bassinet option; the exact TRIV generation is unclear."
+            },
+            {
+              "mentionedName": "Joie Ginger LX",
+              "catalogMatch": "out-of-catalog",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "Several owners praise its price, pramette mode, uneven-sidewalk push, and parent-facing flexibility."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reddit-beyondthebump",
+      "name": "r/beyondthebump",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/beyondthebump/",
+      "geographicFocus": "International with substantial North American participation",
+      "audience": "Parents sharing post-purchase experience after birth",
+      "strollerRelevance": "high",
+      "whyUseful": "Provides broad owner follow-up across everyday, travel, all-terrain, and premium models rather than only pre-purchase expectations.",
+      "accessedOn": "2026-08-30",
+      "threads": [
+        {
+          "id": "beyondthebump-love-stroller",
+          "title": "What stroller did you buy and why do you love it?",
+          "url": "https://www.reddit.com/r/beyondthebump/comments/1ih8cxb/what_stroller_did_you_buy_and_why_do_you_love_it/",
+          "publishedOn": "2025-02-04",
+          "contextTags": [
+            "ownership",
+            "all-terrain",
+            "compact-travel",
+            "basket",
+            "newborn",
+            "premium",
+            "value"
+          ],
+          "summary": "A large owner thread reinforces that terrain and routine determine satisfaction: compact models excel in airports, cars, and tight spaces, while larger wheels and baskets dominate snow, gravel, daily walking, and grocery use. Several households intentionally keep both roles.",
+          "productSignals": [
+            {
+              "mentionedName": "Nuna TRVL lx",
+              "catalogMatch": "exact",
+              "catalogProductId": "nuna-trvl-lx",
+              "sentiment": "mixed",
+              "summary": "Owners praise the fold, near-flat setup, and PIPA urbn integration but consistently warn that uneven or packed-dirt surfaces expose its travel-stroller limits."
+            },
+            {
+              "mentionedName": "CYBEX Coya",
+              "catalogMatch": "exact",
+              "catalogProductId": "cybex-coya",
+              "sentiment": "positive",
+              "summary": "An owner praises its very small fold, smooth ride, and usefulness as the compact half of a two-stroller setup."
+            },
+            {
+              "mentionedName": "Thule Urban Glide 3",
+              "catalogMatch": "exact",
+              "catalogProductId": "thule-urban-glide-3",
+              "sentiment": "positive",
+              "summary": "A daily user values the inflatable wheels, gravel capability, storage, fold, adjustable handle, and long usable life."
+            },
+            {
+              "mentionedName": "Nuna MIXX next",
+              "catalogMatch": "exact",
+              "catalogProductId": "nuna-mixx-next",
+              "sentiment": "positive",
+              "summary": "An owner praises newborn bassinet use, reversible seating, ease of cleaning, appearance, and straightforward operation."
+            },
+            {
+              "mentionedName": "UPPAbaby Vista V3",
+              "catalogMatch": "out-of-catalog",
+              "catalogProductId": null,
+              "sentiment": "mixed",
+              "summary": "Its stable push and large grocery basket are valued, while finish durability and travel bulk draw concern."
+            },
+            {
+              "mentionedName": "Bugaboo Fox",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "Owners praise sturdy wheels, snow handling, adjustable ergonomics, and multi-child durability, without identifying the Renew variant."
+            }
+          ]
+        },
+        {
+          "id": "beyondthebump-travel-strollers",
+          "title": "Recommendations for best travel strollers?",
+          "url": "https://www.reddit.com/r/beyondthebump/comments/1rjxs29/recommendations_for_best_travel_strollers/",
+          "publishedOn": "2026-03-03",
+          "contextTags": [
+            "travel",
+            "overhead-bin",
+            "compact-travel",
+            "budget",
+            "newborn",
+            "secondary-stroller"
+          ],
+          "summary": "Frequent travelers favor a simple fold and small footprint, but the thread questions whether premium pricing is justified for one or two trips per year. Owners also distinguish true current-model experience from assumptions based on rankings or prior versions.",
+          "productSignals": [
+            {
+              "mentionedName": "UPPAbaby Minu V3",
+              "catalogMatch": "exact",
+              "catalogProductId": "uppababy-minu-v3",
+              "sentiment": "insufficient",
+              "summary": "The V3 is described as newborn-rated, but the detailed ownership reports in the same discussion concern the V2."
+            },
+            {
+              "mentionedName": "Bugaboo Butterfly",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "Multiple travelers praise easy folding and extensive plane, train, bus, and daily use, while the exact Butterfly version remains unclear."
+            },
+            {
+              "mentionedName": "Joolz Aer",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "Owners praise compact carry-on use and comfort, but references do not consistently distinguish Aer+ from Aer 2."
+            },
+            {
+              "mentionedName": "Nuna TRVL",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "mixed",
+              "summary": "The automatic fold attracts interest, while one comparison finds it more awkward than a Minu and questions the premium for occasional travel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reddit-nycparents",
+      "name": "r/nycparents",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/nycparents/",
+      "geographicFocus": "New York City, New York",
+      "audience": "Parents navigating dense, often car-free urban life",
+      "strollerRelevance": "high",
+      "whyUseful": "Offers a strong US urban comparison for transit, elevator access, walk-ups, small apartments, rough sidewalks, taxis, and everyday stroller-as-vehicle use.",
+      "accessedOn": "2026-08-30",
+      "threads": [
+        {
+          "id": "nycparents-manhattan-stroller",
+          "title": "Stroller recommendations for Manhattan?",
+          "url": "https://www.reddit.com/r/nycparents/comments/1uu35rz/stroller_recommendations_for_manhattan/",
+          "publishedOn": "2026-07-12",
+          "contextTags": [
+            "city",
+            "car-free",
+            "daily-walking",
+            "newborn",
+            "bassinet",
+            "rough-sidewalks",
+            "subway"
+          ],
+          "summary": "Manhattan parents frame building access and storage as the first filter, then choose between all-day ride quality and portability. Responses emphasize that trusted local routines and resale flexibility are more useful than a universal ranking.",
+          "productSignals": [
+            {
+              "mentionedName": "Nuna SWIV",
+              "catalogMatch": "exact",
+              "catalogProductId": "nuna-swiv",
+              "sentiment": "positive",
+              "summary": "An owner values the lateral wheel movement in subway elevators and finds the stroller manageable to lift without a partner."
+            },
+            {
+              "mentionedName": "UPPAbaby Minu V3",
+              "catalogMatch": "exact",
+              "catalogProductId": "uppababy-minu-v3",
+              "sentiment": "negative",
+              "summary": "For this newborn, parent-facing, bassinet-first request, a shopper rejects it because those specific requirements are not met; this is contextual rather than a global quality judgment."
+            },
+            {
+              "mentionedName": "UPPAbaby Cruz",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "An owner recommends it for a small elevator and values using one stroller rather than buying a separate travel model, but does not state the generation."
+            },
+            {
+              "mentionedName": "Joolz Aer",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "Compact daily use, one-hand carrying, and an available folding bassinet are praised without a consistent version reference."
+            }
+          ]
+        },
+        {
+          "id": "nycparents-best-city-life",
+          "title": "best strollers for NYC life",
+          "url": "https://www.reddit.com/r/nycparents/comments/1ukr8ii/best_strollers_for_nyc_life/",
+          "publishedOn": "2026-07-01",
+          "contextTags": [
+            "city",
+            "subway",
+            "walk-up",
+            "basket",
+            "compact-travel",
+            "two-stroller-strategy",
+            "test-in-person"
+          ],
+          "summary": "Many NYC owners explicitly choose two roles: a large-basket neighborhood stroller and a compact subway, bus, taxi, or flight stroller. Those with walk-ups or limited storage sometimes accept a smaller basket and use one compact model instead.",
+          "productSignals": [
+            {
+              "mentionedName": "CYBEX Mios",
+              "catalogMatch": "exact",
+              "catalogProductId": "cybex-mios",
+              "sentiment": "positive",
+              "summary": "An owner praises its medium city footprint, suspension, maneuverability, adjustable handle, ventilation, and canopy."
+            },
+            {
+              "mentionedName": "Bugaboo Dragonfly",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "It is viewed as a promising middle ground between full-size and travel strollers, but the Plus variant is not identified."
+            },
+            {
+              "mentionedName": "Bugaboo Butterfly",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "Owners repeatedly call it a favorite compact stroller, while keeping a larger stroller for basket-heavy outings."
+            },
+            {
+              "mentionedName": "UPPAbaby Cruz",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "mixed",
+              "summary": "Its daily ride is recommended, but owners say it is too large for routine public transit; no version is consistently named."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-bump-message-boards",
+      "name": "The Bump Message Boards",
+      "platform": "The Bump",
+      "url": "https://forums.thebump.com/",
+      "geographicFocus": "Primarily United States",
+      "audience": "Expecting parents and age- or due-date-based parent groups",
+      "strollerRelevance": "moderate",
+      "whyUseful": "Provides persistent public discussion threads in which parents revisit registry decisions, travel-system compatibility, price, and what they reused for later children.",
+      "accessedOn": "2026-08-30",
+      "threads": [
+        {
+          "id": "thebump-car-seats-strollers-july-2025",
+          "title": "Product Spotlight: Car Seats/Strollers",
+          "url": "https://forums.thebump.com/discussion/12780475/product-spotlight-car-seats-strollers",
+          "publishedOn": "2025-01",
+          "contextTags": [
+            "registry",
+            "travel-system",
+            "budget",
+            "test-in-person",
+            "future-children"
+          ],
+          "summary": "A due-date group compares infant-seat travel systems, compact folds, and expandable strollers. Participants frequently test displays before ordering and weigh convenience against the cost of premium systems and accessories.",
+          "productSignals": [
+            {
+              "mentionedName": "Nuna travel system",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "mixed",
+              "summary": "Participants report favorable recommendations from other parents but consistently identify price as the tradeoff; no stroller model is specified."
+            },
+            {
+              "mentionedName": "UPPAbaby Vista",
+              "catalogMatch": "out-of-catalog",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "A shopper favors its future double conversion after comparing models in person, but has not yet provided post-purchase experience."
+            },
+            {
+              "mentionedName": "Joie Nutmeg with Mint",
+              "catalogMatch": "out-of-catalog",
+              "catalogProductId": null,
+              "sentiment": "insufficient",
+              "summary": "A shopper likes the display model's weight, fold, and small-car fit, but reports expectations rather than ownership."
+            }
+          ]
+        },
+        {
+          "id": "thebump-car-seats-strollers-february-2025",
+          "title": "Product spotlight: car seats and strollers",
+          "url": "https://forums.thebump.com/discussion/12780050/product-spotlight-car-seats-and-strollers",
+          "publishedOn": "2024-10",
+          "contextTags": [
+            "travel-system",
+            "small-car",
+            "reuse",
+            "car-seat-compatibility",
+            "value"
+          ],
+          "summary": "Parents expecting another child discuss reusing proven travel systems instead of upgrading. Small-car fit, extra infant-seat bases, compatibility, and the remaining service life of safety-sensitive components outweigh novelty.",
+          "productSignals": [
+            {
+              "mentionedName": "Chicco KeyFit travel system",
+              "catalogMatch": "out-of-catalog",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "A returning parent reports that the existing system fit a small car and plans to reuse the stroller with a new compatible infant seat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mumsnet-pushchair-chat",
+      "name": "Mumsnet Pushchair Chat",
+      "platform": "Mumsnet",
+      "url": "https://www.mumsnet.com/talk/pushchair_chat",
+      "geographicFocus": "United Kingdom",
+      "audience": "Parents comparing prams, pushchairs, travel systems, and compact strollers",
+      "strollerRelevance": "high",
+      "whyUseful": "A dedicated stroller board with detailed firsthand comparisons, especially for folding, public transport, car boots, cabin travel, and the secondhand market.",
+      "accessedOn": "2026-08-30",
+      "threads": [
+        {
+          "id": "mumsnet-travel-stroller-advice",
+          "title": "Travel stroller advice needed!!",
+          "url": "https://www.mumsnet.com/talk/pushchair_chat/5435236-travel-stroller-advice-needed",
+          "publishedOn": "2025-10-29",
+          "contextTags": [
+            "travel",
+            "overhead-bin",
+            "compact-travel",
+            "newborn",
+            "fold",
+            "test-in-person",
+            "resale"
+          ],
+          "summary": "Parents and a travel nanny compare compact strollers for long-haul travel and later reuse. The discussion favors testing the push personally and considers lie-flat use, basket size, accessories, fold, cabin fit, and resale rather than treating popularity as proof.",
+          "productSignals": [
+            {
+              "mentionedName": "CYBEX Coya",
+              "catalogMatch": "exact",
+              "catalogProductId": "cybex-coya",
+              "sentiment": "positive",
+              "summary": "An experienced travel caregiver strongly favors its push, roomy and comfortable seat, recline, basket, and canopy."
+            },
+            {
+              "mentionedName": "Joolz Aer+",
+              "catalogMatch": "exact",
+              "catalogProductId": "joolz-aer-plus",
+              "sentiment": "mixed",
+              "summary": "Several owners love its sturdy premium feel, travel use, and resale, while others prefer the Butterfly's push or dislike the number of separately priced extras."
+            },
+            {
+              "mentionedName": "Nuna TRIV next",
+              "catalogMatch": "exact",
+              "catalogProductId": "nuna-triv-next",
+              "sentiment": "positive",
+              "summary": "The original poster describes the existing TRIV next as a loved main stroller and seeks a smaller model only to protect it during air travel."
+            },
+            {
+              "mentionedName": "Bugaboo Butterfly 2",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "Owners praise the fold, cabin use, push, and newer recline, but the US catalog's Butterfly 2 Plus name is not used."
+            },
+            {
+              "mentionedName": "Stokke YOYO",
+              "catalogMatch": "out-of-catalog",
+              "catalogProductId": null,
+              "sentiment": "negative",
+              "summary": "Several experienced users criticize narrowness, comfort, basket space, and fold compared with newer cabin strollers."
+            }
+          ]
+        },
+        {
+          "id": "mumsnet-which-travel-system",
+          "title": "Which travel system did you get?",
+          "url": "https://www.mumsnet.com/talk/pushchair_chat/5243282-which-travel-system-did-you-get",
+          "publishedOn": "2025-01-02",
+          "contextTags": [
+            "travel-system",
+            "height",
+            "fold",
+            "public-transit",
+            "rough-terrain",
+            "test-in-person"
+          ],
+          "summary": "Owners emphasize caregiver height, child growth, folding with the seat attached, public-transport lifting, and terrain. Multiple replies report changing their expected choice after physically pushing and folding models in a store.",
+          "productSignals": [
+            {
+              "mentionedName": "Nuna TRIV",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "It is recommended for a petite public-transit user because of weight, compact folding, and newborn travel-system use, but the generation is not clear."
+            },
+            {
+              "mentionedName": "Joolz 2",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "A compact Joolz model is recommended alongside the TRIV, but the text does not establish whether it is Aer 2 or Hub 2."
+            },
+            {
+              "mentionedName": "Bugaboo Fox 5",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "The Fox 5 family is praised for child room, comfort, and varied terrain, but the current Renew variant is not identified."
+            },
+            {
+              "mentionedName": "UPPAbaby Vista V3",
+              "catalogMatch": "out-of-catalog",
+              "catalogProductId": null,
+              "sentiment": "positive",
+              "summary": "A tall family values handle height, bassinet room, and multi-child longevity after an in-store comparison."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reddit-pregnancyuk",
+      "name": "r/PregnancyUK",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/PregnancyUK/",
+      "geographicFocus": "United Kingdom",
+      "audience": "Expecting parents making practical pregnancy and newborn purchases",
+      "strollerRelevance": "high",
+      "whyUseful": "Adds dense-city, small-home, small-car, rain, gravel, and public-transport comparisons across several brands also sold in the US.",
+      "accessedOn": "2026-08-30",
+      "threads": [
+        {
+          "id": "pregnancyuk-what-pram",
+          "title": "What Pram/pushchair did you go for?",
+          "url": "https://www.reddit.com/r/PregnancyUK/comments/1u6osn3/what_prampushchair_did_you_go_for/",
+          "publishedOn": "2026-06-15",
+          "contextTags": [
+            "city",
+            "small-home",
+            "small-car",
+            "rain",
+            "gravel",
+            "newborn",
+            "test-in-person"
+          ],
+          "summary": "Recent buyers describe selecting for their actual mix of winter weather, pavement, gravel, tiny car boots, travel, and storage. Trying a stroller in person often reverses brand expectations, and comments explicitly reject the idea that one model fits every household.",
+          "productSignals": [
+            {
+              "mentionedName": "Nuna TRIV next",
+              "catalogMatch": "exact",
+              "catalogProductId": "nuna-triv-next",
+              "sentiment": "mixed",
+              "summary": "An owner reports strong winter and rain performance on pavement and small gravel but weak behavior on grass and larger gravel."
+            },
+            {
+              "mentionedName": "Joolz Aer 2",
+              "catalogMatch": "exact",
+              "catalogProductId": "joolz-aer-2",
+              "sentiment": "positive",
+              "summary": "City dwellers choose it with the newborn nest for a small flat, easy folding, travel, long warranty, and avoiding a second stroller."
+            },
+            {
+              "mentionedName": "CYBEX Gazelle",
+              "catalogMatch": "out-of-catalog",
+              "catalogProductId": null,
+              "sentiment": "mixed",
+              "summary": "An owner calls it heavy and bulky for a car boot but values countryside stability, a very large basket, and future two-child use."
+            }
+          ]
+        },
+        {
+          "id": "pregnancyuk-small-boot",
+          "title": "Pushchairs for small boot",
+          "url": "https://www.reddit.com/r/PregnancyUK/comments/1hij1z6/pushchairs_for_small_boot/",
+          "publishedOn": "2024-12-20",
+          "contextTags": [
+            "small-car",
+            "trunk-loading",
+            "parent-facing",
+            "newborn",
+            "compact-fold",
+            "test-in-person"
+          ],
+          "summary": "A Mini owner compares parent-facing strollers by folded size rather than choosing an ultra-compact forward-facing model. Replies reinforce testing the real boot opening and note that even compact frames may leave almost no room once a car seat is added.",
+          "productSignals": [
+            {
+              "mentionedName": "CYBEX Mios",
+              "catalogMatch": "exact",
+              "catalogProductId": "cybex-mios",
+              "sentiment": "insufficient",
+              "summary": "It is a shortlisted small-boot option, but the sampled replies do not add direct Mios ownership experience."
+            },
+            {
+              "mentionedName": "Joolz Hub 2",
+              "catalogMatch": "exact",
+              "catalogProductId": "joolz-hub-2",
+              "sentiment": "insufficient",
+              "summary": "It is shortlisted for a compact parent-facing setup without a detailed exact-model owner report in this thread."
+            },
+            {
+              "mentionedName": "Joolz Hub+",
+              "catalogMatch": "exact",
+              "catalogProductId": "joolz-hub-plus",
+              "sentiment": "insufficient",
+              "summary": "The discontinued Hub+ is named only as an alternative version under consideration."
+            },
+            {
+              "mentionedName": "Nuna TRIV next",
+              "catalogMatch": "exact",
+              "catalogProductId": "nuna-triv-next",
+              "sentiment": "mixed",
+              "summary": "An owner says it barely fits a small hatchback, and the paired car seat further compromises passenger space."
+            },
+            {
+              "mentionedName": "CYBEX Balios S Lux",
+              "catalogMatch": "exact",
+              "catalogProductId": "cybex-balios-s-lux",
+              "sentiment": "insufficient",
+              "summary": "It is considered potentially too large, without enough direct exact-model evidence to confirm the concern."
+            },
+            {
+              "mentionedName": "Bugaboo Dragonfly",
+              "catalogMatch": "family-or-version-ambiguous",
+              "catalogProductId": null,
+              "sentiment": "insufficient",
+              "summary": "Its fold is considered for a small boot, but no owner evidence identifies the catalog's Plus variant."
+            },
+            {
+              "mentionedName": "UPPAbaby Cruz V2",
+              "catalogMatch": "out-of-catalog",
+              "catalogProductId": null,
+              "sentiment": "insufficient",
+              "summary": "It is listed as likely too large; the thread does not test that assumption directly."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossForumThemes": [
+    {
+      "id": "test-before-buying",
+      "title": "Hands-on testing changes decisions",
+      "summary": "Across regions, parents recommend pushing with added weight, folding without help, lifting into the real vehicle, checking handle fit for both caregivers, and testing the exact retail model. Several report abandoning an online favorite after doing so.",
+      "threadIds": [
+        "bayarea-try-strollers",
+        "bayarea-baby-gear",
+        "babybumps-best-stroller-for-me",
+        "mumsnet-which-travel-system",
+        "pregnancyuk-what-pram"
+      ],
+      "catalogProductIds": []
+    },
+    {
+      "id": "full-size-versus-compact",
+      "title": "One stroller rarely maximizes both ride and portability",
+      "summary": "Full-size strollers repeatedly win on suspension, basket space, newborn comfort, and long walks; compact strollers win on stairs, cars, restaurants, transit, and flights. Some households deliberately own both, while space-constrained households accept the compromises of one compact model.",
+      "threadIds": [
+        "asksf-sf-hills-long-walks",
+        "buyingforbaby-serious-money",
+        "newparents-what-stroller",
+        "beyondthebump-love-stroller",
+        "nycparents-best-city-life",
+        "mumsnet-travel-stroller-advice"
+      ],
+      "catalogProductIds": [
+        "joolz-aer-2",
+        "joolz-aer-plus",
+        "nuna-trvl-lx",
+        "nuna-mixx-next"
+      ]
+    },
+    {
+      "id": "terrain-weight-tradeoff",
+      "title": "Terrain capability and carrying weight pull in opposite directions",
+      "summary": "Large wheels, suspension, and sturdy frames improve hills, broken sidewalks, gravel, snow, and shopping loads, but the same designs become liabilities on stairs, public transit, and repeated trunk loading.",
+      "threadIds": [
+        "asksf-sf-hills-long-walks",
+        "asksf-stroller-sf-living",
+        "newparents-stroller-recommendations",
+        "beyondthebump-love-stroller",
+        "pregnancyuk-what-pram"
+      ],
+      "catalogProductIds": [
+        "cybex-e-priam",
+        "nuna-triv-next",
+        "nuna-trvl-lx",
+        "thule-urban-glide-3"
+      ]
+    },
+    {
+      "id": "fold-and-lift-are-daily-features",
+      "title": "Fold and lift matter more after birth",
+      "summary": "A one-hand fold, stable carrying grip, manageable heaviest piece, and real folded footprint recur because caregivers often hold a baby, recover from birth, navigate stairs, or load a car alone.",
+      "threadIds": [
+        "bayarea-try-strollers",
+        "buyingforbaby-stroller-advice",
+        "newparents-stroller-recommendations",
+        "babybumps-tell-me-strollers",
+        "nycparents-best-city-life"
+      ],
+      "catalogProductIds": [
+        "joolz-aer-2",
+        "nuna-triv-next",
+        "nuna-trvl-lx"
+      ]
+    },
+    {
+      "id": "newborn-configuration-shapes-value",
+      "title": "The preferred newborn mode changes the useful system",
+      "summary": "Parents who walk for long periods often value a bassinet, nest, or approved flat setup, while car-oriented households prioritize quick infant-seat attachment. Forum participants frequently discover that similarly named regional models have different newborn options.",
+      "threadIds": [
+        "asksf-sf-hills-long-walks",
+        "buyingforbaby-stroller-advice",
+        "babybumps-tell-me-strollers",
+        "thebump-car-seats-strollers-july-2025",
+        "pregnancyuk-what-pram"
+      ],
+      "catalogProductIds": [
+        "joolz-aer-2",
+        "joolz-aer-plus",
+        "nuna-triv-next",
+        "nuna-trvl-lx"
+      ]
+    },
+    {
+      "id": "used-market-reduces-regret",
+      "title": "Used availability and resale reduce switching cost",
+      "summary": "Local and national communities repeatedly recommend secondhand stroller frames and short-lived accessories, both to lower the initial premium and to make it easier to switch once post-birth routines reveal the wrong size or feature mix.",
+      "threadIds": [
+        "asksf-stroller-sf-living",
+        "bayarea-try-strollers",
+        "newparents-stroller-recommendations",
+        "beyondthebump-love-stroller",
+        "mumsnet-which-travel-system"
+      ],
+      "catalogProductIds": []
+    }
+  ],
+  "productFindings": [
+    {
+      "catalogProductId": "bugaboo-butterfly-2-plus",
+      "displayName": "Bugaboo Butterfly 2 Plus",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "Several threads discuss Butterfly or Butterfly 2 family models, but none unambiguously identify the catalog's Butterfly 2 Plus variant."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "bugaboo-dragonfly-plus",
+      "displayName": "Bugaboo Dragonfly Plus",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "Positive Dragonfly family discussion cannot be assigned to the newer Plus variant."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "bugaboo-fox-5-renew",
+      "displayName": "Bugaboo Fox 5 Renew",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "Fox and Fox 5 praise in the sample is version-ambiguous and cannot be rolled into Fox 5 Renew."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "cybex-coya",
+      "displayName": "CYBEX Coya",
+      "coverage": {
+        "threadCount": 3,
+        "forumCount": 3
+      },
+      "sentiment": "positive",
+      "positiveThemes": [
+        "Very compact fold",
+        "Smooth push for a travel stroller",
+        "Roomy seat, recline, canopy, and usable basket"
+      ],
+      "concerns": [
+        "The exact-model evidence remains a small curated sample."
+      ],
+      "evidenceThreadIds": [
+        "buyingforbaby-stroller-advice",
+        "beyondthebump-love-stroller",
+        "mumsnet-travel-stroller-advice"
+      ]
+    },
+    {
+      "catalogProductId": "cybex-libelle",
+      "displayName": "CYBEX Libelle",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "No qualifying selected thread produced an exact-model signal."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "cybex-beezy",
+      "displayName": "CYBEX Beezy",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "No qualifying selected thread produced an exact-model signal."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "cybex-balios-s-lux",
+      "displayName": "CYBEX Balios S Lux",
+      "coverage": {
+        "threadCount": 1,
+        "forumCount": 1
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "It appears only as a potentially large small-car candidate, without a direct owner assessment."
+      ],
+      "evidenceThreadIds": [
+        "pregnancyuk-small-boot"
+      ]
+    },
+    {
+      "catalogProductId": "cybex-priam",
+      "displayName": "CYBEX Priam",
+      "coverage": {
+        "threadCount": 1,
+        "forumCount": 1
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "It is a premium shortlist item in one thread, without enough exact-model ownership evidence."
+      ],
+      "evidenceThreadIds": [
+        "buyingforbaby-serious-money"
+      ]
+    },
+    {
+      "catalogProductId": "cybex-mios",
+      "displayName": "CYBEX Mios",
+      "coverage": {
+        "threadCount": 2,
+        "forumCount": 2
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [
+        "Medium-size city footprint",
+        "Suspension, maneuverability, ventilation, and canopy"
+      ],
+      "concerns": [
+        "Only one of the two threads contains substantive ownership experience."
+      ],
+      "evidenceThreadIds": [
+        "nycparents-best-city-life",
+        "pregnancyuk-small-boot"
+      ]
+    },
+    {
+      "catalogProductId": "cybex-avi-spin",
+      "displayName": "CYBEX Avi Spin",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "No qualifying selected thread produced an exact-model signal."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "cybex-e-priam",
+      "displayName": "CYBEX e-Priam",
+      "coverage": {
+        "threadCount": 1,
+        "forumCount": 1
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [
+        "Hill assistance and controlled downhill use in San Francisco"
+      ],
+      "concerns": [
+        "Powered-stroller weight is a concern for stairs.",
+        "Only one qualifying exact-model thread supports the finding."
+      ],
+      "evidenceThreadIds": [
+        "asksf-sf-hills-long-walks"
+      ]
+    },
+    {
+      "catalogProductId": "joolz-aer-2",
+      "displayName": "Joolz Aer²",
+      "coverage": {
+        "threadCount": 4,
+        "forumCount": 3
+      },
+      "sentiment": "positive",
+      "positiveThemes": [
+        "One-hand fold and low carry weight",
+        "Compact storage in restaurants, apartments, cars, and aircraft",
+        "Smooth maneuverability for a compact stroller",
+        "Newborn nest availability"
+      ],
+      "concerns": [
+        "Narrower wheels and compact geometry inspire less confidence for rough ground or very young infants in one thread.",
+        "A full-size stroller still offers more suspension and storage."
+      ],
+      "evidenceThreadIds": [
+        "asksf-sf-hills-long-walks",
+        "buyingforbaby-stroller-advice",
+        "buyingforbaby-serious-money",
+        "pregnancyuk-what-pram"
+      ]
+    },
+    {
+      "catalogProductId": "joolz-aer-plus",
+      "displayName": "Joolz Aer+ Newborn Bundle",
+      "coverage": {
+        "threadCount": 2,
+        "forumCount": 2
+      },
+      "sentiment": "mixed",
+      "positiveThemes": [
+        "Compact daily and travel use",
+        "Bassinet availability and small fold",
+        "Premium feel and resale"
+      ],
+      "concerns": [
+        "Some experienced users prefer another compact stroller's push.",
+        "Separately priced accessories reduce perceived value."
+      ],
+      "evidenceThreadIds": [
+        "newparents-what-stroller",
+        "mumsnet-travel-stroller-advice"
+      ]
+    },
+    {
+      "catalogProductId": "joolz-hub-2",
+      "displayName": "Joolz Hub²",
+      "coverage": {
+        "threadCount": 2,
+        "forumCount": 2
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [
+        "Smaller but sturdy urban frame",
+        "Manageable on inconsistent sidewalks"
+      ],
+      "concerns": [
+        "Only one thread contains direct ownership experience; the other is a shortlist mention."
+      ],
+      "evidenceThreadIds": [
+        "newparents-what-stroller",
+        "pregnancyuk-small-boot"
+      ]
+    },
+    {
+      "catalogProductId": "joolz-hub-plus",
+      "displayName": "Joolz Hub+",
+      "coverage": {
+        "threadCount": 1,
+        "forumCount": 1
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "The only exact mention is a discontinued alternative under consideration, not an owner report."
+      ],
+      "evidenceThreadIds": [
+        "pregnancyuk-small-boot"
+      ]
+    },
+    {
+      "catalogProductId": "joolz-day-plus",
+      "displayName": "Joolz Day+",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "No qualifying selected thread produced an exact-model signal."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "nuna-viaa-cabn",
+      "displayName": "Nuna VIAA cabn",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "No qualifying selected thread produced an exact-model signal."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "nuna-demi-icon",
+      "displayName": "Nuna DEMI icon",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "DEMI Grow and DEMI Next discussions cannot be assigned to DEMI icon."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "nuna-swiv",
+      "displayName": "Nuna SWIV + PIPA urbn",
+      "coverage": {
+        "threadCount": 3,
+        "forumCount": 3
+      },
+      "sentiment": "positive",
+      "positiveThemes": [
+        "Lateral movement in tight elevators",
+        "Manageable solo lifting",
+        "Strong concise owner endorsements"
+      ],
+      "concerns": [
+        "One of the three threads only lists the model as a candidate, so the positive aggregate rests on two substantive signals."
+      ],
+      "evidenceThreadIds": [
+        "buyingforbaby-serious-money",
+        "newparents-what-stroller",
+        "nycparents-manhattan-stroller"
+      ]
+    },
+    {
+      "catalogProductId": "nuna-triv-lx",
+      "displayName": "Nuna TRIV lx",
+      "coverage": {
+        "threadCount": 1,
+        "forumCount": 1
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "It appears only as a comparison point, without firsthand exact-model use."
+      ],
+      "evidenceThreadIds": [
+        "buyingforbaby-stroller-advice"
+      ]
+    },
+    {
+      "catalogProductId": "nuna-triv-next",
+      "displayName": "Nuna TRIV next + PIPA urbn",
+      "coverage": {
+        "threadCount": 5,
+        "forumCount": 4
+      },
+      "sentiment": "mixed",
+      "positiveThemes": [
+        "Low weight and compact fold",
+        "One-hand operation",
+        "Good pavement, rain, and light-gravel use",
+        "Practical public-transport size"
+      ],
+      "concerns": [
+        "Grass and larger gravel expose wheel limitations.",
+        "Small-car fit can still be extremely tight once the car seat is included.",
+        "One thread contains only a shortlist mention."
+      ],
+      "evidenceThreadIds": [
+        "buyingforbaby-serious-money",
+        "newparents-what-stroller",
+        "mumsnet-travel-stroller-advice",
+        "pregnancyuk-what-pram",
+        "pregnancyuk-small-boot"
+      ]
+    },
+    {
+      "catalogProductId": "nuna-mixx-next",
+      "displayName": "Nuna MIXX next",
+      "coverage": {
+        "threadCount": 2,
+        "forumCount": 2
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [
+        "Newborn bassinet and reversible seating",
+        "Easy-clean fabric and straightforward use"
+      ],
+      "concerns": [
+        "Only one thread contains substantive exact-generation ownership evidence."
+      ],
+      "evidenceThreadIds": [
+        "buyingforbaby-serious-money",
+        "beyondthebump-love-stroller"
+      ]
+    },
+    {
+      "catalogProductId": "nuna-trvl-lx",
+      "displayName": "Nuna TRVL lx",
+      "coverage": {
+        "threadCount": 3,
+        "forumCount": 2
+      },
+      "sentiment": "mixed",
+      "positiveThemes": [
+        "One-hand compact fold",
+        "Good car and airport portability",
+        "Direct infant-seat integration"
+      ],
+      "concerns": [
+        "Curb ramps, bumpy pavement, and packed dirt reveal limited suspension and wheel capability.",
+        "Owners differ on whether it is suitable as a full-time stroller."
+      ],
+      "evidenceThreadIds": [
+        "buyingforbaby-stroller-advice",
+        "buyingforbaby-serious-money",
+        "beyondthebump-love-stroller"
+      ]
+    },
+    {
+      "catalogProductId": "nuna-trvl-pipa-rx",
+      "displayName": "Nuna TRVL + PIPA rx",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "Generic TRVL and PIPA discussions do not establish this exact bundle."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "nuna-tavo-next",
+      "displayName": "Nuna TAVO next",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "No qualifying selected thread produced an exact-model signal."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "nuna-tavo",
+      "displayName": "Nuna TAVO",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "No qualifying selected thread produced an exact-model signal."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "nuna-ivvi-totl",
+      "displayName": "Nuna IVVI totl",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "No qualifying selected thread produced an exact-model signal."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "nuna-pipa-urbn-flex",
+      "displayName": "Nuna PIPA urbn flex system",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "PIPA urbn and TRVL discussions do not unambiguously identify the catalog's flex system."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "thule-urban-glide-3",
+      "displayName": "Thule Urban Glide 3",
+      "coverage": {
+        "threadCount": 1,
+        "forumCount": 1
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [
+        "Inflatable wheels and gravel capability",
+        "Storage, folding, and adjustable ergonomics",
+        "Daily all-terrain use"
+      ],
+      "concerns": [
+        "Only one exact-model thread supports the otherwise detailed positive report."
+      ],
+      "evidenceThreadIds": [
+        "beyondthebump-love-stroller"
+      ]
+    },
+    {
+      "catalogProductId": "thule-urban-glide-4-wheel",
+      "displayName": "Thule Urban Glide 4-wheel",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "Generic Urban Glide discussion cannot be assigned to the four-wheel model."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "thule-glide-3",
+      "displayName": "Thule Glide 3",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "No qualifying selected thread produced an exact-model signal."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "thule-spring-2",
+      "displayName": "Thule Spring 2",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "A Thule Spring family reference does not identify Spring 2."
+      ],
+      "evidenceThreadIds": []
+    },
+    {
+      "catalogProductId": "uppababy-cruz-v3",
+      "displayName": "UPPAbaby Cruz V3",
+      "coverage": {
+        "threadCount": 1,
+        "forumCount": 1
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "The only exact-model owner signal strongly prefers a compact Aer 2 for fold and maneuverability.",
+        "Broader positive Cruz family discussion is version-ambiguous and is intentionally excluded."
+      ],
+      "evidenceThreadIds": [
+        "buyingforbaby-stroller-advice"
+      ]
+    },
+    {
+      "catalogProductId": "uppababy-minu-v3",
+      "displayName": "UPPAbaby Minu V3",
+      "coverage": {
+        "threadCount": 3,
+        "forumCount": 3
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [
+        "Suggested as a compact stroller with a better push than some travel models"
+      ],
+      "concerns": [
+        "Two signals are recommendations or specification discussion rather than ownership.",
+        "One shopper rejects it for a specific parent-facing, bassinet-first Manhattan requirement."
+      ],
+      "evidenceThreadIds": [
+        "buyingforbaby-stroller-advice",
+        "beyondthebump-travel-strollers",
+        "nycparents-manhattan-stroller"
+      ]
+    },
+    {
+      "catalogProductId": "uppababy-ridge-v2",
+      "displayName": "UPPAbaby Ridge V2",
+      "coverage": {
+        "threadCount": 0,
+        "forumCount": 0
+      },
+      "sentiment": "insufficient",
+      "positiveThemes": [],
+      "concerns": [
+        "Ridge family references in the wider search do not identify Ridge V2 within the selected threads."
+      ],
+      "evidenceThreadIds": []
+    }
+  ],
+  "limitations": [
+    {
+      "type": "access",
+      "source": "BabyCenter Community",
+      "url": "https://community.babycenter.com/",
+      "detail": "Automated public inspection was blocked by robots.txt, so no BabyCenter content was summarized or used as evidence."
+    },
+    {
+      "type": "access",
+      "source": "What to Expect Community",
+      "url": "https://community.whattoexpect.com/",
+      "detail": "Automated public inspection was blocked by robots.txt, so no What to Expect content was summarized or used as evidence."
+    },
+    {
+      "type": "sampling",
+      "detail": "Twenty curated threads cannot measure population-wide ownership, reliability, popularity, or satisfaction. Product-level sentiment describes only exact-model signals in this sample."
+    },
+    {
+      "type": "model-identity",
+      "detail": "Forum users often omit generations or use regional names. This file deliberately leaves those signals at family level instead of transferring them to a current catalog model."
+    },
+    {
+      "type": "market-differences",
+      "detail": "UK configurations, names, accessories, newborn approvals, and prices can differ from US products. UK threads are used only for experiential themes unless the model identity is clear; they are never compatibility evidence."
+    },
+    {
+      "type": "source-volatility",
+      "detail": "Threads can be edited, deleted, re-ranked, or receive new replies after the access date. No engagement metric is treated as stable."
+    },
+    {
+      "type": "date-precision",
+      "detail": "The Bump exposes month-level publication dates for the selected threads, represented as YYYY-MM; all other selected threads use YYYY-MM-DD."
+    },
+    {
+      "type": "safety",
+      "detail": "Anecdotal forum statements about newborn use, sleep, car seats, or jogging are not safety guidance. Manufacturer instructions and pediatric guidance remain authoritative."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "first-stroll",
+  "version": "2.0.0",
+  "private": true,
+  "description": "A static, evidence-aware newborn stroller matcher.",
+  "scripts": {
+    "build:insights": "node scripts/build-insights.mjs",
+    "check:data": "node scripts/build-insights.mjs --check",
+    "test": "node scripts/build-insights.mjs --check && node --test --test-isolation=none"
+  }
+}
