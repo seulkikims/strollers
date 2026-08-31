@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5efe5">
-  <meta name="description" content="A quick, visual quiz for finding a newborn-ready stroller.">
-  <title>First Stroll — Newborn Stroller Finder</title>
+  <meta name="description" content="A quick, visual quiz for finding a newborn-ready stroller for Central Richmond, San Francisco and a Tesla SUV.">
+  <title>First Stroll — Central Richmond Stroller Finder</title>
   <style>
     :root {
       --cream: #f5efe5;
@@ -370,6 +370,69 @@
       color: var(--sage);
     }
 
+    .profile-context {
+      max-width: 620px;
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .profile-context-item {
+      min-width: 215px;
+      padding: 11px 14px;
+      display: flex;
+      align-items: center;
+      flex: 1 1 230px;
+      gap: 10px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: rgba(255, 253, 249, .6);
+    }
+
+    .profile-context-icon {
+      width: 33px;
+      height: 33px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      color: var(--sage-dark);
+      background: var(--sage-soft);
+    }
+
+    .profile-context-icon svg {
+      width: 17px;
+    }
+
+    .profile-context-copy span,
+    .profile-context-copy strong {
+      display: block;
+    }
+
+    .profile-context-copy span {
+      color: var(--muted);
+      font-size: .62rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .profile-context-copy strong {
+      margin-top: 3px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: .87rem;
+      line-height: 1.25;
+    }
+
+    .profile-context-note {
+      flex-basis: 100%;
+      margin: 1px 2px 0;
+      color: var(--muted);
+      font-size: .7rem;
+      line-height: 1.45;
+    }
+
     .hero-proof {
       margin: 42px 0 0;
       padding: 18px 0 0;
@@ -659,6 +722,10 @@
       font-weight: 800;
       letter-spacing: .08em;
       text-transform: uppercase;
+    }
+
+    .snapshot-title.snapshot-answers-title {
+      margin-top: 18px;
     }
 
     .snapshot-empty {
@@ -1626,6 +1693,15 @@
         align-items: stretch;
       }
 
+      .profile-context {
+        margin-top: 22px;
+      }
+
+      .profile-context-item {
+        min-width: 0;
+        flex-basis: 100%;
+      }
+
       .hero-actions .button {
         width: 100%;
       }
@@ -1930,9 +2006,32 @@
     <section class="intro view" id="intro-view" aria-labelledby="intro-title">
       <div class="intro-grid">
         <div class="hero-copy-block">
-          <p class="eyebrow">A calmer way to choose</p>
+          <p class="eyebrow">Central Richmond stroller finder</p>
           <h1 class="hero-title" id="intro-title" tabindex="-1">Your first stroller, <em>minus the spiral.</em></h1>
-          <p class="hero-copy">Four quick choices. Seven newborn-ready options. One short list ready to share with the people making it a gift.</p>
+          <p class="hero-copy">Four quick choices, tuned for Central Richmond streets and loading into a Tesla SUV. Seven newborn-ready options. One calmer short list.</p>
+
+          <div class="profile-context" aria-label="Recommendation profile">
+            <div class="profile-context-item">
+              <span class="profile-context-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11Z"></path>
+                  <circle cx="12" cy="10" r="2"></circle>
+                </svg>
+              </span>
+              <span class="profile-context-copy"><span>Primary location</span><strong>Central Richmond, San Francisco</strong></span>
+            </div>
+            <div class="profile-context-item">
+              <span class="profile-context-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m5 15 1.5-5h11L19 15M4 15h16v4H4zM7 19v2M17 19v2"></path>
+                  <circle cx="7.5" cy="16.8" r=".8" fill="currentColor"></circle>
+                  <circle cx="16.5" cy="16.8" r=".8" fill="currentColor"></circle>
+                </svg>
+              </span>
+              <span class="profile-context-copy"><span>Primary vehicle</span><strong>Tesla SUV</strong></span>
+            </div>
+            <p class="profile-context-note">Built into every match: urban ride comfort, rough-patch handling, storage, car-seat ease, and manageable lifting.</p>
+          </div>
 
           <div class="hero-actions">
             <button class="button button-primary" id="start-button" type="button">
@@ -1995,10 +2094,10 @@
           </div>
 
           <div class="floating-card mini-profile">
-            <div class="mini-profile-title">Your fit <span>live</span></div>
+            <div class="mini-profile-title">SF + SUV fit <span>live</span></div>
             <div class="mini-row"><span>Ride</span><span class="mini-track"><span class="mini-fill" style="width:92%"></span></span></div>
             <div class="mini-row"><span>Carry</span><span class="mini-track"><span class="mini-fill" style="width:72%"></span></span></div>
-            <div class="mini-row"><span>Value</span><span class="mini-track"><span class="mini-fill" style="width:84%"></span></span></div>
+            <div class="mini-row"><span>Car fit</span><span class="mini-track"><span class="mini-fill" style="width:84%"></span></span></div>
           </div>
         </div>
       </div>
@@ -2040,7 +2139,7 @@
       <header class="results-heading">
         <p class="eyebrow">Your short list is ready</p>
         <h1 class="results-title" id="results-title" tabindex="-1">A clearer first step.</h1>
-        <p class="results-lead">Ranked for your routine, newborn setup, and priorities—ready to share, not a generic best-of list.</p>
+        <p class="results-lead">Ranked for Central Richmond, a Tesla SUV, your newborn setup, and your priorities—not a generic best-of list.</p>
       </header>
 
       <div id="winner-container"></div>
@@ -2074,7 +2173,7 @@
 
   <footer class="site-footer">
     <p><strong>First Stroll</strong> is an independent comparison demo.</p>
-    <p>Approximate US list prices and specs checked August 30, 2026. Verify details before purchase.</p>
+    <p>Profile: Central Richmond, San Francisco, CA · Tesla SUV. Approximate US list prices and specs checked August 30, 2026.</p>
   </footer>
 
   <div class="sr-only" id="app-announcer" aria-live="assertive"></div>
@@ -2105,6 +2204,14 @@
         car: "Easy car transfers",
         value: "Strong value",
         finish: "Premium finish"
+      };
+
+      var recommendationProfile = {
+        id: "central-richmond-tesla-suv",
+        location: "Central Richmond, San Francisco, CA",
+        vehicle: "Tesla SUV",
+        locationDelta: { ride: 2, trail: 1, basket: 1 },
+        vehicleDelta: { car: 2, lift: 1 }
       };
 
       var iconPaths = {
@@ -2453,7 +2560,9 @@
           }
         });
 
-        snapshot.innerHTML = '<p class="snapshot-title">Your answers</p>' +
+        snapshot.innerHTML = '<p class="snapshot-title">Profile</p>' +
+          '<div class="snapshot-chips"><span class="snapshot-chip">' + recommendationProfile.location + '</span><span class="snapshot-chip">' + recommendationProfile.vehicle + '</span></div>' +
+          '<p class="snapshot-title snapshot-answers-title">Your answers</p>' +
           (labels.length
             ? '<div class="snapshot-chips">' + labels.map(function (label) { return '<span class="snapshot-chip">' + label + '</span>'; }).join("") + '</div>'
             : '<p class="snapshot-empty">Your priorities will appear here as you go.</p>');
@@ -2469,6 +2578,9 @@
       function calculateMatches() {
         var weights = {};
         dimensions.forEach(function (dimension) { weights[dimension] = 1; });
+
+        applyDelta(weights, recommendationProfile.locationDelta);
+        applyDelta(weights, recommendationProfile.vehicleDelta);
 
         var routeOption = getQuestionOption("route", state.answers.route);
         var liftOption = getQuestionOption("lifting", state.answers.lifting);
@@ -2636,6 +2748,8 @@
               '<h2 class="winner-title">' + winner.name + '</h2>' +
               '<p class="winner-description">' + winner.description + '</p>' +
               '<div class="winner-meta">' +
+                '<div class="meta-pill"><span>Primary location</span><strong>Central Richmond, SF</strong></div>' +
+                '<div class="meta-pill"><span>Primary vehicle</span><strong>' + recommendationProfile.vehicle + '</strong></div>' +
                 '<div class="meta-pill"><span>Newborn-ready from</span><strong>' + formatPrice(winner.price) + '</strong></div>' +
                 '<div class="meta-pill"><span>Listed weight</span><strong>' + formatWeight(winner.weight) + '</strong></div>' +
                 '<div class="meta-pill"><span>Day-one setup</span><strong>' + winner.setup + '</strong></div>' +
@@ -2694,7 +2808,7 @@
         window.requestAnimationFrame(function () {
           document.getElementById("results-title").focus({ preventScroll: true });
         });
-        announcer.textContent = "Your stroller matches are ready. " + winner.name + " is your top match at " + winner.match + " percent.";
+        announcer.textContent = "Your Central Richmond and Tesla SUV stroller matches are ready. " + winner.name + " is your top match at " + winner.match + " percent.";
       }
 
       function startQuiz() {
